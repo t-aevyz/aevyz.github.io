@@ -10,5 +10,5 @@ type: true
 
 <br>
 <p>
-<h1>test Stuff</h1>
+<h6>HTML inserted into a markdown file</h6>
 </p>

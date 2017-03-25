@@ -1,0 +1,14 @@
+---
+title: Liquid Test 3
+date: 2017-03-25 20:11:00
+categories: jekyll testing
+type: false
+---
+
+<ul class="posts">
+
+{% for post in site.posts %}
+  {% if post.type == true%}
+  <li><span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time class="pull-right post-list">{{ post.date | date_to_string | date: "%b %-d, %Y"  }}</h4></time></span></span></li>
+  {% endif %}
+{% endfor %}
