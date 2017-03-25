@@ -13,9 +13,9 @@ disqus: diqus-username
 ##Make sure to edit the above fields, especially for disqus.
 
 
-highlighter: pygments
-markdown: kramdown ##redcarpet
-##redcarpet:
+highlighter: rouge ##pygments --> No Longer In Use
+markdown: kramdown ##redcarpet -->No Longer in Use
+##redcarpet: --> Not required
 ##  extensions: ["tables"]
 
 defaults:
