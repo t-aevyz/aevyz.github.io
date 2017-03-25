@@ -4,7 +4,7 @@ date: 2017-03-25 20:11:00
 categories: jekyll testing
 type: false
 ---
-
+``` HTML
 <ul class="posts">
 
 {% for post in site.posts %}
@@ -23,3 +23,4 @@ type: false
 {% endfor %}
 
 </ul>
+```
