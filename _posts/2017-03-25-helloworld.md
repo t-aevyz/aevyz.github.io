@@ -13,17 +13,16 @@ This is going to be my first "proper" post using Jekyll and I am going to be see
 This is going to be a test for liquid stuff:
 
 {% for post in site.posts %}
-BEGIN FOR LOOP:
+#BEGIN FOR LOOP:
 
 
 
   {% assign words = post.content | split: '\n' %}
 
-  {% for word in words limit:2 %}
+  {% for word in words limit:1 %}
     {{ word }}
   {% endfor %}
-END FOR LOOP
---------------------------------
+#END FOR LOOP
 
 
 {% endfor %}
