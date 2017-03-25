@@ -17,7 +17,7 @@ This is going to be a test for liquid stuff:
 
 
 
-  {% assign words = post.content | split: '\n' %}
+  {% assign words = post.content | split: '<br>' %}
 
   {% for word in words limit:1 %}
     {{ word }}
