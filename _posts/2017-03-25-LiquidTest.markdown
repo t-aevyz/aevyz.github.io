@@ -1,15 +1,14 @@
 ---
-title: First Blog Post
+title: Liquid Demo For Loops
 date: 2017-03-25 18:03:00
 categories: jekyll testing
-type: true
+show: true
 ---
 
-This is the first post for the site, just wanted to test and see if everything works out as expected.
 
 <ul>
 {% for post in site.posts %}
-  {% if post.type == true%}
+  {% if post.show == true%}
     <li>
         <a href="{{ site.baseurl | within: site}}{{post.url | within: site}}">
           {{ post.title | within: site }}
