@@ -6,3 +6,7 @@ type: false
 ---
 
 # This is a test for type notBlog
+
+{% for post in site.posts %}
+  {{ site.baseurl }}{{ post.url }}
+{% endfor %}
