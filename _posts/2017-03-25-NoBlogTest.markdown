@@ -9,7 +9,7 @@ type: false
 <ul>
 {% for post in site.posts %}
   {% if post.type == true%}
-  <li>{{ site.baseurl }}{{ post.url }}</li>
+  <li><a href="{{ site.baseurl }}{{ post.url }}">URL</a></li>
   {% endif %}
 {% endfor %}
 </ul>
