@@ -21,3 +21,5 @@ show: true
   {% endif %}
 {% endfor %}
 </ul>
+
+<a href="{{site.baseurl}}LiquidTestDemo.html">Hyperlink To Hidden Page</a>
