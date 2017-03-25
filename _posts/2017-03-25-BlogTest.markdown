@@ -1,0 +1,8 @@
+---
+title: No Type
+date: 2017-03-25 18:03:00
+categories: jekyll testing
+
+---
+
+# This is a test for no type
