@@ -5,11 +5,15 @@ categories: jekyll testing
 type: false
 ---
 
-# This is a test for type notBlog
+# This is a test for type notBlog v1
 <ul>
 {% for post in site.posts %}
   {% if post.type == true%}
-  <li><a href="{{ site.baseurl }}{{ post.url }}">URL</a></li>
+  <li>
+  <a href="
+  {{ site.baseurl }}{{ post.url }}
+  ">URL</a>
+  </li>
   {% endif %}
 {% endfor %}
 </ul>
