@@ -6,9 +6,12 @@ type: false
 ---
 
 # This is a test for Liquid Stuff
-
+```HTML
+<ul>
 {% for post in site.posts %}
   {% if post.type == true%}
-  {{ site.baseurl }}{{ post.url }}
+  <li>{{ site.baseurl }}{{ post.url }}</li>
   {% endif %}
 {% endfor %}
+</ul>
+```
