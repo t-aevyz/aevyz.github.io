@@ -1,8 +1,8 @@
 ---
 title: Liquid Demo For Loops
 date: 2017-03-25 18:03:00
-categories: jekyll testing
-show: true
+categories: Site_Tests
+show: false
 ---
 
 
