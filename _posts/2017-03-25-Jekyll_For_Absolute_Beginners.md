@@ -1,11 +1,11 @@
 ---
-title: Hello World
+title: Github Sites for Beginners Without Programming Experience
 date: 2017-03-25 12:26
 categories: General
 show: true
 ---
 
-# Github Sites for Beginners Without Programming Expierience
+# Github Sites for Beginners Without Programming Experience
 
 ### Goal
 In this series of Blog Posts, I hope to make life easier for all people trying to make a Github Site, with little to no knowledge of programming.
@@ -17,6 +17,7 @@ Github Sites are powered by Jekyll, which basically takes your text files and ap
 Jekyll makes it really easy to make blogs, such as this one, as you simply need to write out your posts in a text file, place it into the `_posts` folder and it shall automatically generate a webpage for it.
 
 Here is the code used to generate this page:
+<iframe url="https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/_posts/2017-03-25-Jekyll_For_Absolute_Beginners.md"></iframe>
 
 ### What you are going to need
 * A Github Account ([Register](https://github.com/join?source=header-home))
