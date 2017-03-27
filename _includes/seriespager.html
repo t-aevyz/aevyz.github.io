@@ -11,9 +11,9 @@
       {% assign stop = true %}
     {% elsif post.categories == page.categories %}
       {% if !stop %}
-        {% assign prev = post.url %}
+        {% assign prev = post %}
       {% else %}
-        {% assign next = post.url %}
+        {% assign next = post %}
         {% break %}
       {% endif %}
     {% endif %}
@@ -21,10 +21,10 @@
   {% endfor%}
 
   {% if prev != "" %}
-    <li class="previous"><a href="{{ prev }}">&larr; Previous Page of {{page.series}}</a></li>
+    <li class="previous"><a href="{{ prev }}">&larr; Previous Page <br>{{prev.title}}</a></li>
   {% endif %}
   {% if next != "" %}
-      <li class="next"><a href="{{ next }}"> Next Page of {{page.series}} &rarr;</a></li>
+      <li class="next"><a href="{{ next }}"> Next Page &rarr;<br>{{next.title}}</a></li>
   {% endif %}
 
 </ul>
