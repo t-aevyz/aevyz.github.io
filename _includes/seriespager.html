@@ -11,9 +11,9 @@
       {% assign stop = true %}
     {% elsif post.categories == page.categories %}
       {% if !stop %}
-        {% assign prev = post %}
+        {% assign prev = post.url %}
       {% else %}
-        {% assign next = post %}
+        {% assign next = post.url %}
         {% break %}
       {% endif %}
     {% endif %}
