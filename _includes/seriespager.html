@@ -21,10 +21,10 @@
   {% endfor%}
 
   {% if prev != "" %}
-    <li class="previous"><a href="{{ prev }}">&larr; Previous Page - {{prev.title}}</a></li>
+    <li class="previous"><a href="{{ prev }}">&larr; Previous Page - {{prev}}</a></li>
   {% endif %}
   {% if next != "" %}
-      <li class="next"><a href="{{ next }}"> Next Page &rarr; {{next.title}}</a></li>
+      <li class="next"><a href="{{ next }}"> Next Page &rarr; <br /> {{next}}</a></li>
   {% endif %}
 
 </ul>
