@@ -10,7 +10,7 @@
   <p>For</p>
     {% if post == page %}
     <p>True</p>
-      {assign stop = true}
+      {% assign stop = true %}
     {% elsif post.categories == page.categories %}
     <p>false</p>
       {% if !stop %}
