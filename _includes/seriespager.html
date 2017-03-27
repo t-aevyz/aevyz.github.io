@@ -1,0 +1,29 @@
+<ul class="pager">
+  {% assign prev = "" %}
+  {% assign next = "" %}
+  {% assign stop = false %}
+  
+{
+  {% for post in site.posts%}
+    {% if post == page %}
+
+    {% elsif post.categories == page.categories %}
+      {% if !stop %}
+        {% assign prev = post.url %}
+      {% else %}
+        {% assign next = post.url %}
+        {% break %}
+      {% endif %}
+    {% endif %}
+
+  {% endfor%}
+
+  {{% if prev!="" %}
+    <li class="previous"><a href="{{ prev }}">&larr; Older</a></li>
+  {% endif %}
+  {% if next!="" %}
+    <li class="next"><a href="{{ next }}">Newer &rarr;</a></li>
+  {% endif %}}
+}
+
+</ul>
