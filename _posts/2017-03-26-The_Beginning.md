@@ -1,7 +1,7 @@
 ---
 title: The Beginning Of Your Site - Part 1
 date: 2017-03-26 01:26
-categories: GitHub Sites For Beginners
+categories: GitHub_Sites
 series:  GitHub Sites For Beginner
 show: true
 ---
