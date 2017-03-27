@@ -26,4 +26,4 @@ To view the source code used to create this page, click [here](https://raw.githu
 
 _*While this is not necessarily required, it does make life a lot easier._
 
-How to configure each of these programs, you shall see in the following setup guide. 
+How to configure each of these programs, you shall see in the following setup guide.
