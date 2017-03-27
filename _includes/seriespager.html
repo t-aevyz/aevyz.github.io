@@ -1,18 +1,23 @@
 <ul class="pager">
 
 <p>Series Pager init</p>
-{
+
   {% assign prev = "" %}
   {% assign next = "" %}
   {% assign stop = false %}
 
   {% for post in site.posts%}
+  <p>For</p>
     {% if post == page %}
-
+    <p>True</p>
+      {assign stop = true}
     {% elsif post.categories == page.categories %}
+    <p>false</p>
       {% if !stop %}
+      <p>no stop</p>
         {% assign prev = post.url %}
       {% else %}
+      <p>yesstop</p>
         {% assign next = post.url %}
         {% break %}
       {% endif %}
@@ -21,11 +26,12 @@
   {% endfor%}
 
   {% if prev != "" %}
+  <p>Prev</p>
     <li class="previous"><a href="{{ prev }}">&larr; Previous</a></li>
   {% endif %}
   {% if next != "" %}
+  <p>Next</p>
     <li class="next"><a href="{{ next }}">Next &rarr;</a></li>
   {% endif %}
-}
 
 </ul>
