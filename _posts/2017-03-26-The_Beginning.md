@@ -1,5 +1,5 @@
 ---
-title: The Beginning Of Your Site - Part 1
+title: Setting Up
 date: 2017-03-26 01:26
 categories: GitHub_Sites
 series:  GitHub Sites For Beginner
@@ -7,7 +7,7 @@ show: true
 ---
 
 # The Beginning of Your Sites
-## Part 1: The Setup
+## Part 1: Setting Up
 
 For this project, I shall be explaining how I used a template and modified this to make this blog. Whilst not all templates are made in the same way, they do bear a lot of similarities and I am fairly confident that one can easily apply the lessons learned here to other projects.
 
