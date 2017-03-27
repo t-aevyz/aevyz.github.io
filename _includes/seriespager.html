@@ -2,7 +2,7 @@
   {% assign prev = "" %}
   {% assign next = "" %}
   {% assign stop = false %}
-  
+
 {
   {% for post in site.posts%}
     {% if post == page %}
@@ -18,10 +18,10 @@
 
   {% endfor%}
 
-  {{% if prev!="" %}
+  {{% if prev !="" %}
     <li class="previous"><a href="{{ prev }}">&larr; Older</a></li>
   {% endif %}
-  {% if next!="" %}
+  {% if next !="" %}
     <li class="next"><a href="{{ next }}">Newer &rarr;</a></li>
   {% endif %}}
 }
