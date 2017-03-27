@@ -1,7 +1,7 @@
 ---
 title: Github Sites for Beginners Without Programming Experience
 date: 2017-03-26 00:26
-categories: githubsites
+categories: GitHub Sites For Beginners
 show: true
 ---
 
