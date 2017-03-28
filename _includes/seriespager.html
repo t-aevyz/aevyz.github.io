@@ -13,15 +13,15 @@
     {{post.url}} if
       {% assign stop = true %}
     {% elsif post.categories == page.categories %}
-      {% if !stop %}
-      {{post.url}} !stop
-        {% assign prev = post.url %}
-        {% assign pTitle = post.title %}
+      {% if stop %}
+        {{post.url}} Tstop
+          {% assign next = post.url %}
+          {% assign nTitle = post.title %}
+          {% break %}
       {% else %}
-      {{post.url}} stop
-        {% assign next = post.url %}
-        {% assign nTitle = post.title %}
-        {% break %}
+        {{post.url}} Fstop
+          {% assign prev = post.url %}
+          {% assign pTitle = post.title %}
       {% endif %}
     {% endif %}
 
