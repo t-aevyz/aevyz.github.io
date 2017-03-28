@@ -74,7 +74,7 @@ To configure Atom for your project, you simply need to add it as a project folde
 ### And that's it!
 You finished configuring the project.
 
-You can now view your site at `www.<Your User Name>.github.io/herring-cove` *
+You can now view your site at `www.<Your User Name>.github.io/herring-cove`
 
 
-_*In the event you have renamed your repository to something else, replace `herring-cove` with the repositories name_
+>_In the event you have renamed your repository to something else, replace `herring-cove` with the repositories name_

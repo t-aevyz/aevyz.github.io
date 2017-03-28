@@ -22,9 +22,9 @@ To view the source code used to create this page, click [here](https://raw.githu
 ### What you are going to need
 * A GitHub Account ([Register](https://github.com/join?source=header-home))
 * A Text Editor of Choice (I Personally Recommend [Atom](https://atom.io/))
-* A Git Client* (I Personally Recommend [GitKraken](https://www.gitkraken.com/))
+* A Git Client (I Personally Recommend [GitKraken](https://www.gitkraken.com/))
 
 
-_*While this is not necessarily required, it does make life a lot easier._
+>_While it is not necessarily required to use a Git Client, it does make life a lot easier, then manually uploading everything to Github or using a CLI interface._
 
 How to configure each of these programs, you shall see in the following setup guide.
