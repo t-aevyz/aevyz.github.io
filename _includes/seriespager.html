@@ -1,5 +1,5 @@
   {% for post in site.posts%}
-  {{post.url}}
+  {{post.url}} <br>
   {% endfor %}
 <ul class="pager">
 
@@ -10,6 +10,7 @@
 
   {% for post in site.posts%}
     {% if post == page %}
+    {{post.url}} if
       {% assign stop = true %}
     {% elsif post.categories == page.categories %}
       {% if !stop %}
