@@ -1,6 +1,3 @@
-  {% for post in site.posts%}
-  {{post.url}} <br>
-  {% endfor %}
 <ul class="pager">
 
 
@@ -10,16 +7,13 @@
 
   {% for post in site.posts%}
     {% if post == page %}
-    {{post.url}} if
       {% assign stop = true %}
     {% elsif post.categories == page.categories %}
       {% if stop %}
-        {{post.url}} Tstop
           {% assign prev = post.url %}
           {% assign pTitle = post.title %}
           {% break %}
       {% else %}
-        {{post.url}} Fstop
           {% assign next = post.url %}
           {% assign nTitle = post.title %}
       {% endif %}
