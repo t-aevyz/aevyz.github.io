@@ -13,7 +13,7 @@ You first want to write out your first post in Atom. Most posts that you shall w
 
 Markdown is a `Lightweight Markup Language`, in other words, it is used to format text. In the case of Jekyll, Markdown files are automatically converted into HTML webpages for you. This post is formatted using Markdown.
 
->###### For those with HTML Experience
+>#### For those with HTML Experience
 For those with HTML experience, you are free to also include HTML snippets in your Markdown files. These will also be displayed on the site later, however it cannot be guaranteed to be bug free. You can also use the `include` method from Liquid, which shall be elaborated on in a further post.
 
 ### Creating the Post
