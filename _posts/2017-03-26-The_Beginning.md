@@ -34,11 +34,11 @@ To do this you need to open your project's repository, which can be done by navi
 
 In the bar you need to select `Settings`.
 
-![Select Settings]({{site.baseurl}}/images/tutorial/githubbar.png  "Select Settings")
+![Select Settings]({{site.baseurl}}/images/tutorial/githubbar.png "Select Settings")
 
 And change the Source setting from the GitHub Pages section to Master.
 
-![Github Settings]({{site.baseurl}}/images/tutorial/githubsettings.png "Change to Master")
+  ![Github Settings]({{site.baseurl}}/images/tutorial/githubsettings.png "Change to Master")
 
 
 ### Setting up GitKraken
