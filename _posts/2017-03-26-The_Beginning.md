@@ -24,21 +24,21 @@ For our purposes, we shall be creating a personal copy of the Herring-Cove templ
 
 To Fork our Project, all we need to do is simply press the Fork button on the [GitHub Page](https://github.com/arnp/herring-cove), by [@Arnp](https://github.com/arnp)
 
-![alt text]({{site.baseurl}}/images/tutorial/fork.png "How to Fork")
+![Forking]({{site.baseurl}}/images/tutorial/fork.png "How to Fork")
 
 You will finally need to change the settings of your project, to allow your GitHub page to be live.
 
 To do this you need to open your project's repository, which can be done by navigating to the `Your repositories` section of the GitHub homepage.
 
-![alt text]({{site.baseurl}}/images/tutorial/YourRepositories.png "Your Repositories")
+![Your Repos]({{site.baseurl}}/images/tutorial/YourRepositories.png "Your Repositories")
 
 In the bar you need to select `Settings`.
 
-![alt text]({{site.baseurl}}/images/tutorial/GitHubBar.png "Select Settings")
+![Select Settings]({{site.baseurl}}/images/tutorial/GitHubBar.png "Select Settings")
 
 And change the Source setting from the GitHub Pages section to Master.
 
-![alt text]({{site.baseurl}}/images/tutorial/GitHubSettings.png "Change to Master")
+![Github Settings]({{site.baseurl}}/images/tutorial/GitHubSettings.png "Change to Master")
 
 
 ### Setting up GitKraken
@@ -60,7 +60,7 @@ Following that, you can select the folder to which you shall clone the fork. Any
 Select the herring-cove repository to clone and finally hit the `Clone the Repo!` button to begin the cloning progress.
 
 
-![alt text](images/tutorial/gitkrakenClone.png "The Clone Menu")
+![Clone Menu]({{site.basurl}}/images/tutorial/gitkrakenClone.png "The Clone Menu")
 
 Once the project is successfully cloned, you can now open the project using the Open Menu (`File-->Open Repo` or simply `CTRL+O`) and selecting the project from the file menu.
 
