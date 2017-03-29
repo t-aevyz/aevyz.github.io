@@ -1,5 +1,5 @@
 ---
-title: My Series
+title: My Series1
 ---
 <div class="container">
   <div id="article">
@@ -20,7 +20,7 @@ forend
 
 --->
     {% assign arr = "blog" | split: ", "%}
-    {% assign arr = {{arr | push: "notblog" | split: ", "}} %}
+    {% assign arr = {{arr | push: "notblog"}} %}
     {% for arrelem in arr %}
     <li>{{arrelem}}</li>
     {% endfor %}
