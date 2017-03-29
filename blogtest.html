@@ -21,16 +21,12 @@ forend
 
 --->
     {% assign arr = "blog" | split: ", "%}
-    {% assign arr = {{arr | push: "notblog"}} %}
 
     {% for cpage in site.pages %}
-    Round {{forloop.index}}<br>
       {% assign bool = true %}
 
       {% for cat in arr %}
-      Sub-Round {{forloop.index}} + {{cat}} = {{arr[{{ forloop.index }}]}} <br>
         {% if cat == arr[{{ forloop.index }}] %}
-          Bool=False <br>
           {% assign bool = false %}
         {% endif %}
       {% endfor %}
@@ -48,7 +44,7 @@ forend
         </ul>
       {% endif %}
 
-      END FOR<br><br>
+<br>END FOR<br><br>
     {% endfor %}
 
 </div>
