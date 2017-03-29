@@ -47,6 +47,8 @@ In the event there is a green check on your commit, then that means that everyth
 
 ![Github Fail Commit]({{site.baseurl}}/images/tutorial/githubfailbuild.png)
 
+In some cases, GitHub might not interpret there being any changes to the site, despite there actually being so. Examples of this, are for instance when you make changes to the CSS (if you aren't sure what this is, it will be explained later). To alleviate this, you must force GitHub to rebuild your site. The easiest way to do this, is to make a slight change to a post of your choice, such as adding another enter at the end of the page, which won't make any difference. Whilst this is not the ideal solution, it forces GitHub to rebuild your site. Alternatively, you could use this as an opportunity to spell check your site, which might be useful as well.  
+
 #### Viewing in you Browser
 Despite there being no build errors, there may be formatting errors in your site, so it is advisable to view the pages you created just as any end-user would.
 
