@@ -5,10 +5,14 @@ title: My Series
   <div id="article">
   <h1>My Series</h1>
   <ul class="posts">
+<!---
+Stupid Idea
+For Loop
 
+--->
       {% for cat in site.categories %}
         <li>
-          {{cat.url}}
+          {{cat}}
         </li>
       {% endfor %}
   </ul>
