@@ -6,11 +6,13 @@
   <ul>
 
       {% assign cat page.categories%}
-      {% for post in site.categories.cat %}
+      {% for post in site.posts%}
+
         <li>
           <a href="{{ site.baseurl | within: site}}{{post.url | within: site}}">
             {{ post.title | within: site }}
           </a>
         </li>
+        {% endfor %}
   </ul>
 </div>
