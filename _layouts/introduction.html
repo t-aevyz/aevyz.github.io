@@ -16,9 +16,9 @@ layout: default
     {% assign str = "" %}
     {% for post in site.posts %}
 
-      {% if post.categories == page.categories %}
+      {% if post.categories == page.categories and post.layout != "introduction" %}
         {% capture final %}
-        <li><a href="{{ site.baseurl | within: site}}{{post.url | within: site}}">{{ post.title | within: site }}</a><time class="pull-right post-list">{{ post.date | within: site | date_to_string | date: "%b %-d, %Y"  }}</time></li>
+        <li><a href="{{ site.baseurl | within: site}}{{post.url | within: site}}">{{ post.title | within: site }}</a></li>
         {{str}}
         {% endcapture %}
         {% assign str = final %}
