@@ -20,7 +20,9 @@ forend
 
 --->
     {% assign arr = "blog" | split: ", "%}
-    {% assign arr = {{arr | push: "notblog"}} %}
+    {% assign arr = {{arr | push: ", notblog" | split: ", "}} %}
+    {% for arrelem in arr %}
     {{arr}}
+    {% endfor %}
   </ul>
 </div>
