@@ -34,7 +34,7 @@ Finally you can upload your posts to the Github servers by simply hitting the `P
 
 ### Viewing Your Changes
 
-##### Check if Project Has Any Build Errors
+#### Check if Project Has Any Build Errors
 In the event that you have made a big mistake in your code and the site cannot be built, don't panic, the old functional version of your site will still be shown.
 
 You can check if your new content has any major flaws by going to your online repository, found at `www.github.com/<Your User Name Here>/herring-cove`.
@@ -47,7 +47,7 @@ In the event there is a green check on your commit, then that means that everyth
 
 ![Github Fail Commit]({{site.baseurl}}/images/tutorial/githubfailbuild.png)
 
-##### Viewing in you Browser
+#### Viewing in you Browser
 Despite there being no build errors, there may be formatting errors in your site, so it is advisable to view the pages you created just as any end-user would.
 
 >Your default URL for your website is `https://<Your User Name>.github.io/herring-cove`.

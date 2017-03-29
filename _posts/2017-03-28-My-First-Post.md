@@ -29,7 +29,9 @@ You must name your post in the following scheme:
 
 For instance, this post is titled `2017-03-28-My-First-Post.md`.
 
-You can split the Markdown File into two parts, the `Front Matter` and the `Body`:
+You can split the Markdown File into two parts, the `Front Matter` and the `Body`.
+
+<br>
 
 #### Front Matter
 In the Front Matter, you can predefine variables, that shall be used to help create your site. The front matter **must** be the first thing in a post and must be valid and also **must** be enclosed in three hyphens, like this `---`.

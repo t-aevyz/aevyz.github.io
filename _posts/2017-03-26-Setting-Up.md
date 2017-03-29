@@ -14,7 +14,7 @@ I have chosen the template [Herring Cove](https://github.com/arnp/herring-cove),
 
 >#### What is Forking?
 >A fork is a personal copy of another user's repository (basically their project) that lives on your account. Forks allow you to freely make changes to a project without affecting the original.
->*[From the GitHub Glossary](https://help.github.com/articles/github-glossary/)*
+><br>*[From the GitHub Glossary](https://help.github.com/articles/github-glossary/)*
 
 For our purposes, we shall be creating a personal copy of the Herring-Cove template, that we shall customize to suit our needs.
 
