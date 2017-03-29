@@ -35,7 +35,13 @@ forend
       {% if bool == true %}
         {% assign arr = {{arr | push: cpage.categories}} %}
         <h1>{{cpage.categories}}</h1>
-
+        <ul>
+          {% for cat in site.pages %}
+            {% if cat.categories == cpage.categories %}
+              <li>{{cat | within: site}}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
       {% endif %}
     {% endfor %}
 
