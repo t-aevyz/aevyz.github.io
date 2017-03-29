@@ -13,6 +13,7 @@ layout: default
 
     <ul>
         {% for post in site.posts %}
+        <li>{{post.categories}}, {{site.categories}}</li>
           {% if post.categories == site.categories %}
             <li>
                 <a href="{{ site.baseurl | within: site}}{{post.url | within: site}}">
