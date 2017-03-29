@@ -1,9 +1,9 @@
 ---
+layout: introduction
 title: Introduction
 date: 2017-03-26 00:26
 categories: GitHub_Sites
 series:  GitHub Sites For Beginner
-layout: introduction
 show: true
 ---
 
