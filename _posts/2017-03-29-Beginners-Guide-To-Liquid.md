@@ -1,6 +1,6 @@
 ---
 title: Beginners Guide to Liquid Template Language
-date: 2017-03-28 14:26
+date: 2017-03-29 22:26
 categories: GitHub_Sites
 series:  GitHub Sites For Beginner
 show: true
