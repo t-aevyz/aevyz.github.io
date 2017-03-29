@@ -21,8 +21,21 @@ forend
 --->
     {% assign arr = "blog" | split: ", "%}
     {% assign arr = {{arr | push: "notblog"}} %}
-    {% for arrelem in arr %}
-    <li>{{arrelem}}</li>
+
+    {% for cpage in site.pages %}
+      {% assign bool = true %}
+      {% for cat in arr %}
+        {% if cat == arr[{{ forloop.index }}] %}
+          {% assign bool = false %}
+        {% endif %}
+      {% endfor %}
+      {% if bool == true %}
+        {% assign arr = {{arr | push: cpage.categories}} %}
+        <h1>{{cpage.categories}}</p>
+          {% for cat in site.categories.{{cpage.categories}%}
+            <li>{{cat}}</li>
+          {% endfor %}
+      {% endif %}
     {% endfor %}
   </ul>
 </div>
