@@ -20,15 +20,12 @@ For All pages of site
 forend
 
 --->
-    {% assign arr = "blog" | split: ", "%}
+    {% assign arr = "blog" | split: ", " %}
 
     {% for cpage in site.pages %}
       {% assign bool = true %}
 
       {% for cat in arr %}
-        {% if cat == arr[{{ forloop.index }}] %}
-          {% assign bool = false %}
-        {% endif %}
       {% endfor %}
 
 
@@ -43,8 +40,6 @@ forend
           {% endfor %}
         </ul>
       {% endif %}
-
-<br>END FOR<br><br>
     {% endfor %}
 
 </div>
