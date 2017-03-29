@@ -32,7 +32,11 @@ forend
       {% endfor %}
 
 
-    
+      {% if bool == true %}
+        {% assign arr = {{arr | push: cpage.categories}} %}
+        <h1>{{cpage.categories}}</h1>
+
+      {% endif %}
     {% endfor %}
 
 </div>
