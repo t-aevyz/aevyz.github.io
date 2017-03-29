@@ -1,14 +1,16 @@
 ---
-title: Uploading Your Sites
+title: Uploading Your Content
 date: 2017-03-28 14:26
 categories: GitHub_Sites
 series:  GitHub Sites For Beginner
 show: true
 ---
-### Creating a Commit
-Now assuming you have any changes you wish to publish, such as any new posts or some new site feature, you can make use of Gitkraken to help you upload these to Github.
+Now that you have created content for your website, you want to publish it live on your website. This is done by creating a Commit, that you can Push on to your site.
 
-First of all, select the item which has a text bar containing the words `//WIP`.
+### Creating a Commit
+Now assuming you have any changes you wish to publish, such as any new posts or some new site feature, you can make use of Gitkraken to help you upload these to Github. You can bundle these changes (or simply a single change) into a so called commit, that you can then upload to the Github servers.
+
+The first step, is to select the item which has a text bar containing the words `//WIP`.
 
 ![Select Commit]({{site.baseurl}}/images/tutorial/selectcommit.png "Select Commit")
 
@@ -29,3 +31,23 @@ From the files that you have staged, you can create a commit. It is a sensible i
 Finally you can upload your posts to the Github servers by simply hitting the `Push` button in the top bar.
 
 ![Push]({{site.baseurl}}/images/tutorial/pushbutton.png "Push Button")
+
+### Viewing Your Changes
+
+##### Check if Project Has Any Build Errors
+In the event that you have made a big mistake in your code and the site cannot be built, don't panic, the old functional version of your site will still be shown.
+
+You can check if your new content has any major flaws by going to your online repository, found at `www.github.com/<Your User Name Here>/herring-cove`.
+
+Now simply click on the `commits` button in the `code` tab.
+
+![Github Commit Button]({{site.baseurl}}/images/tutorial/commits.png)
+
+In the event there is a green check on your commit, then that means that everything is okay. If not, you may have an error message that pops up, such as this one that may help you resolve the issue. Be aware, that this does not always happen.
+
+![Github Fail Commit]({{site.baseurl}}/images/tutorial/githubfailbuild.png)
+
+##### Viewing in you Browser
+Despite there being no build errors, there may be formatting errors in your site, so it is advisable to view the pages you created just as any end-user would.
+
+>Your default URL for your website is `https://<Your User Name>.github.io/herring-cove`.

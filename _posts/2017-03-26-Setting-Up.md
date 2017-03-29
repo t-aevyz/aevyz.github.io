@@ -6,19 +6,16 @@ series:  GitHub Sites For Beginner
 show: true
 ---
 
-# The Beginning of Your Sites
-## Part 1: Setting Up
-
 For this project, I shall be explaining how I used a template and modified this to make this blog. Whilst not all templates are made in the same way, they do bear a lot of similarities and I am fairly confident that one can easily apply the lessons learned here to other projects.
 
 I have chosen the template [Herring Cove](https://github.com/arnp/herring-cove), by [@Arnp](https://github.com/arnp). It is a rather good looking and simple template that is easy to modify.
 
 ### Forking the Project
 
-Well first of all, what exactly is forking?
->A fork is a personal copy of another user's repository that lives on your account. Forks allow you to freely make changes to a project without affecting the original.
+>#### What is Forking?
+>A fork is a personal copy of another user's repository (basically their project) that lives on your account. Forks allow you to freely make changes to a project without affecting the original.
 
-[From the GitHub Glossary](https://help.github.com/articles/github-glossary/)
+>*[From the GitHub Glossary](https://help.github.com/articles/github-glossary/)*
 
 For our purposes, we shall be creating a personal copy of the Herring-Cove template, that we shall customize to suit our needs.
 
@@ -74,7 +71,7 @@ To configure Atom for your project, you simply need to add it as a project folde
 ### And that's it!
 You finished configuring the project.
 
-You can now view your site at `www.<Your User Name>.github.io/herring-cove`
+You can now view your site at `https://<Your User Name>.github.io/herring-cove`
 
 
 >_In the event you have renamed your repository to something else, replace `herring-cove` with the repositories name_

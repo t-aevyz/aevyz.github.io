@@ -5,13 +5,11 @@ categories: GitHub_Sites
 series:  GitHub Sites For Beginner
 show: true
 ---
-# My First Post
 
-Now that you have generated a site, you probably wish to actually post something on it.
-### Writing Your First Post
-You first want to write out your first post in Atom. Most posts that you shall write shall be posted in the `_posts` folder. Jekyll accepts posts in HTML or Markdown.
+Now that you have generated a site, you probably wish to actually post something on it. You should first write out your first post in Atom. Most posts that you shall write shall be posted in the `_posts` folder. Jekyll accepts posts in HTML or Markdown.
 
-Markdown is a `Lightweight Markup Language`, in other words, it is used to format text. In the case of Jekyll, Markdown files are automatically converted into HTML webpages for you. This post is formatted using Markdown.
+### What is Markdown
+Markdown is a `Lightweight Markup Language`, in other words, it is used to format text. In the case of Jekyll, Markdown files are automatically converted into HTML webpages for you. For instance, [this post](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/_posts/2017-03-28-My-First-Post.md) is formatted using Markdown.
 
 >#### For those with HTML Experience
 For those with HTML experience, you are free to also include HTML snippets in your Markdown files. These will also be displayed on the site later, however it cannot be guaranteed to be bug free. You can also use the `include` method from Liquid, which shall be elaborated on in a further post.
@@ -29,6 +27,7 @@ You must name your post in the following scheme:
 * `.md` is your file extension for **M**ark**d**own files.
 ****
 
+For instance, this post is titled `2017-03-28-My-First-Post.md`.
 
 You can split the Markdown File into two parts, the `Front Matter` and the `Body`:
 
@@ -54,4 +53,7 @@ If you want to read more about this, you can do so at the [official Ruby Docs on
 #### The Text Body
 In the text body you are free to post whatever you want. You are free to use Markdown or HTML in this section. Furthermore, you can use the Liquid Template Language, which will shall elaborate on in another post.
 
-Your best bet in understanding Markdown is to simply read the [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), as it explains the formatting in a far better way then I could.
+Your best bet in understanding Markdown is to simply read the [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), as it explains the formatting in a far better way then I could
+
+>#### For images
+>For images, it is advisable to create separate folders for each post's images to make organization simpler. This theme comes with a folder called `images` by default, which you should use. Whilst it is *not necessarily* required to have alt and title-text, it does allow you to provide information to your users and [search engines](https://yoast.com/image-seo/).
