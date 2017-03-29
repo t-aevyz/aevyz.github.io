@@ -22,7 +22,7 @@ forend
 --->
     {% assign arr = "blog" | split: ", " %}
 
-    {% for cpage in site.pages %}
+    {% for cpage in site.posts %}
       {% assign bool = true %}
 
       {% for cat in arr %}
