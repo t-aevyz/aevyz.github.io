@@ -383,9 +383,9 @@ pre
 
 img
 {
+  max-width:100%;
   -webkit-filter: drop-shadow(3px 3px 3px #222);
   filter: drop-shadow(3px 3px 3px #222);
-  max-width:100%;
 }
 
 #article
