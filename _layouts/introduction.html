@@ -10,6 +10,23 @@ layout: default
   </p> <hr/>
   <div class="post">
     {{ content }}
+
+    <ul>
+        {% for post in site.posts %}
+          {% if post.categories == site.categories %}
+            <li>
+                <a href="{{ site.baseurl | within: site}}{{post.url | within: site}}">
+                  {{ post.title | within: site }}
+                </a>
+                <time class="pull-right post-list">
+                  {{ post.date | within: site | date_to_string | date: "%b %-d, %Y"  }}
+                </time>
+            </li>
+          {% endif %}
+        {% endfor %}
+    </ul>
+
+
   </div>
 </div>
 {% include share.html %}
