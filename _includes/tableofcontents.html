@@ -5,14 +5,15 @@
 
   <ul>
 
-      {% assign cat page.categories%}
-      {% for post in site.posts%}
 
-        <li>
-          <a href="{{ site.baseurl | within: site}}{{post.url | within: site}}">
-            {{ post.title | within: site }}
-          </a>
-        </li>
-        {% endfor %}
+      {% for post in site.posts%}
+        {% if post.categories == page.categories %}
+          <li>
+            <a href="{{ site.baseurl | within: site}}{{post.url | within: site}}">
+              {{ post.title | within: site }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
   </ul>
 </div>
