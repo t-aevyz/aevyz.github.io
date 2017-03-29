@@ -4,8 +4,9 @@ title: My Series1
 <div class="container">
   <div id="article">
   <h1>My Series</h1>
-  <ul class="posts">
 <!---
+
+<ul class="posts">
 Stupid Idea
 Blog is first Item in an Array
 For All pages of site
@@ -23,19 +24,29 @@ forend
     {% assign arr = {{arr | push: "notblog"}} %}
 
     {% for cpage in site.pages %}
+    Round {{forloop.index}}<br>
       {% assign bool = true %}
+
       {% for cat in arr %}
+      Sub-Round {{forloop.index}} + {{cat}} = {{arr[{{ forloop.index }}]}} <br>
         {% if cat == arr[{{ forloop.index }}] %}
+          Bool=False <br>
           {% assign bool = false %}
         {% endif %}
       {% endfor %}
+
+
       {% if bool == true %}
         {% assign arr = {{arr | push: cpage.categories}} %}
         <h1>{{cpage.categories}}</p>
+        <ul>
           {% for cat in site.categories.{{cpage.categories}%}
             <li>{{cat}}</li>
           {% endfor %}
+        </ul>
       {% endif %}
+
+      END FOR<br><br>
     {% endfor %}
-  </ul>
+
 </div>
