@@ -26,13 +26,14 @@ title: My Series12
             {% for cat in site.posts %}
               {% if cat.categories == tempcpage.categories %}
                 <li>{{ cat.title }}</li>
-                {% assign postarr = {{ cat | push: postarr }} %}
+                {% assign postitles = {{ postarr.title | push: cat }} %}
+                {% assign posturls  = {{ postarr.url | push: cat }} %}
               {% endif %}
             {% endfor %}
 
-            {% for p in postarr %}
+            {% for p in posturls %}
               <li>p: {{ p.title }}</li>
-              <li><a href="{{ site.baseurl | within: site}}{{p.url | within: site}}"> {{ p.title | within: site }} </a></li>
+              <li><a href="{{ site.baseurl | within: site}}{{ posturls[forloop.rindex0] }}"> {{ posttitles[forloop.rindex0] }} </a></li>
             {% endfor %}
           </ul>
           <br>
