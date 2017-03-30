@@ -28,11 +28,12 @@ title: My Series123
               {% assign abc = {{ site.posts[3]]}}.title %}
 
               {% if cat.categories == tempcpage.categories %}
-                {% assign posttitles = {{ cat.title | push: posttitles }} %}
-                {% assign posturls  = {{ cat.url | push: posturls }} %}
+                {% assign posttitles = {{ posttitles | unshift: cat.title }} %}
+                {% assign posturls  = {{ posturls | unshift: cat.url }} %}
                 <li><a href="{{ site.baseurl | within: site}}{{ cat.url }}"> {{ cat.title }} </a></li>
               {% endif %}
               {% for purl in posturls %}
+              abcx
                 {{posturls}}
                 {{posturls[3]}}
 
