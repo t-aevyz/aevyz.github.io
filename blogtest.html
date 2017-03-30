@@ -1,5 +1,5 @@
 ---
-title: My Series123
+title: My Series
 ---
 <div class="container">
   <div id="article">
@@ -39,9 +39,9 @@ forend
         <ul>
           {% for cat in site.posts %}
 
-          <li>If Check2: '{{cat.categories}}' '{{tempcpage.categories}}'</li>
+          <li>If Check: '{{cat.categories}}' '{{tempcpage.categories}}'</li>
             {% if cat.categories == tempcpage.categories %}
-              <li>List: {{cat | within: site}}</li>
+              <li>List: {{cat.categories | within: site}}</li>
             {% endif %}
           {% endfor %}
         </ul>
