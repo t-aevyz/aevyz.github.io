@@ -1,5 +1,5 @@
 ---
-title: My Series123456
+title: My Series1234567
 ---
 <div class="container">
   <div id="article">
@@ -29,7 +29,7 @@ title: My Series123456
 
               {% if cat.categories == tempcpage.categories %}
                 {% assign posttitles = {{ posttitles | unshift: cat.title }} %}
-                {% assign posturls  = {{ posturls | unshift: cat.url }} %}
+                {% assign posturls  = {{ posturls | push: cat.url }} %}
                 <li><a href="{{ site.baseurl | within: site}}{{ cat.url }}"> {{ cat.title }} </a></li>
               {% endif %}
               {% for purl in posturls %}
