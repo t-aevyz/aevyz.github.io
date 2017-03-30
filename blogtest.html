@@ -1,5 +1,5 @@
 ---
-title: My Series1234567
+title: My Series1234567890
 ---
 <div class="container">
   <div id="article">
@@ -32,7 +32,7 @@ title: My Series1234567
                 {% assign posturls  = {{ posturls | push: cat.url }} %}
                 {% assign str = {{ str | prepend: '<li><a href="{{ site.baseurl | within: site}}{{ cat.url }}"> {{ cat.title }} </a></li>'}} %}
               {% endif %}
-            
+
             {% endfor %}
             {{str}}
           </ul>
