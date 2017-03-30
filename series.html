@@ -2,8 +2,6 @@
 title: All Posts
 ---
 
-<p id="demo"></p>
-Hello World
 <script type="text/javascript">
 var pTitles = [];
 var pURLs = [];
@@ -15,9 +13,9 @@ document.write("{{post.title}}");
 {% endfor %}
 
 //pTitles.reverse();
-/*
-for(int i = 0; i<pTitles.length; i++){
-  document.write(pTitles[i].link('{{site.baseurl}}'+pURLs[i]));
+
+for(int i = 0; i < pTitles.length; i++){
+  document.write(pTitles[i].link(pURLs[i]));
 }
-*/
+
 </script>
