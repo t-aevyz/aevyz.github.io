@@ -18,7 +18,7 @@ pTitles.reverse();
 for(i = 0; i < pTitles.length; i++){
   var str = String(pTitles[i]);
   var url = String(pURLs[i]);
-  var final = str.link('<li>'+url+</li>);
+  var final = str.link('&ltli&gt'+url+'&lt/li&gt');
   document.write(final);
 }
 
