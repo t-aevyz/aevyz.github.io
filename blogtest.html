@@ -26,8 +26,8 @@ title: My Series1
 
             {% for cat in site.posts %}
               {% if cat.categories == tempcpage.categories %}
-                {% assign postitles = {{ postarr.title | push: cat.title }} %}
-                {% assign posturls  = {{ postarr.url | push: cat.url }} %}
+                {% assign posttitles = {{ posttitles | push: cat.title }} %}
+                {% assign posturls  = {{ posturls | push: cat.url }} %}
                 <li>{{ posttitles }}
                 aaa<br></li>
               {% endif %}
