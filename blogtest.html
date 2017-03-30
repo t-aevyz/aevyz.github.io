@@ -18,22 +18,22 @@ title: My Series
       {% assign tempcpage = cpage %}
 
       {% if bool == true %}
-        {% assign arr = {{arr | push: cpage.categories}} %}
-        <h1>{{cpage.categories}}</h1>
-        <ul>
-          {% assign postarr = "" %}
+          {% assign arr = {{arr | push: cpage.categories}} %}
+            <h1>{{cpage.categories}}</h1>
+            <ul>
+            {% assign postarr = "" %}
 
-          {% for cat in site.posts %}
-            {% if cat.categories == tempcpage.categories %}
-              {% assign postarr = {{ postarr | push: cat }} }
-            {% endif %}
-          {% endfor %}
+            {% for cat in site.posts %}
+              {% if cat.categories == tempcpage.categories %}
+                {% assign postarr = {{ postarr | push: cat }} %}
+              {% endif %}
+            {% endfor %}
 
-          {% for p in postarr %}
-            <li><a href="{{ site.baseurl | within: site}}{{p.url | within: site}}">{{ p.title | within: site }} </a></li>
-          {% endfor %}
-        </ul>
-        <br>
+            {% for p in postarr %}
+              <li><a href="{{ site.baseurl | within: site}}{{p.url | within: site}}">{{ p.title | within: site }} </a></li>
+            {% endfor %}
+          </ul>
+          <br>
       {% endif %}
     {% endfor %}
 
