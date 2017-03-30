@@ -5,31 +5,19 @@ title: All Posts
 <p id="demo"></p>
 Hello World
 <script type="text/javascript">
-var arr = [];
+var pTitles = [];
+var pURLs = [];
 
 {% for post in site.posts %}
-arr[arr.length] = "{{post.title}}"
-document.write("{{post.title}}")
+pTitles[pTitles.length] = "{{post.title}}";
+pURLs[pURLs.length] = "{{post.url}}"
+document.write("{{post.title}}");
 {% endfor %}
-</script>
-<script>
-{% capture posts %}
-[
-{% for post in site.posts %}
-{
-"title"    : "{{ post.title }}",
-"url"      : "{{ post.url }}",
-"date"     : "{{ post.date | date: "%B %d, %Y" }}",
-"content"  : "{{ post.content | escape }}"
-} {% if forloop.last %}{% else %},{% endif %}
-{% endfor %}
-]
-{% endcapture %}
-var posts = {{posts | strip_newlines}}
 
-document.write(posts);
-</script>
-<script>
-document.write('Your Title'.link('http://www.example.com'));
+pTitles.reverse();
+
+for(int i = pTitles.length()-1; i!=0; i--){
+  document.write(pTitles[i].link('{{site.baseurl}}'+pURLs[i]));
+}
 
 </script>
