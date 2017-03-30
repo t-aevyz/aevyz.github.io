@@ -3,26 +3,10 @@ title: My Series
 ---
 <div class="container">
   <div id="article">
-<!---
 
-<ul class="posts">
-Stupid Idea
-Blog is first Item in an Array
-For All pages of site
-  If Category is new
-    Add category to array
-    Category title
-    For Items in Category
-    print
-  else
-    skip
-forend
-
---->
     {% assign arr = "blog" | split: ", " %}
 
     {% for cpage in site.posts %}
-    {{cpage.categories}}
       {% assign bool = true %}
 
       {% for categ in arr %}
@@ -37,15 +21,19 @@ forend
         {% assign arr = {{arr | push: cpage.categories}} %}
         <h1>{{cpage.categories}}</h1>
         <ul>
+          {% assign postarr = "" %}
           {% for cat in site.posts %}
+
+          <li>If Check: '{{cat.categories}}' '{{tempcpage.categories}}'</li>
             {% if cat.categories == tempcpage.categories %}
-              <li>
-                <a href="{{ site.baseurl | within: site}}{{cat.url | within: site}}">
-                  {{ cat.title | within: site }}
-                </a>
-              </li>
+<<<<<<< HEAD
+              {% assign postarr = {{postarr | push: <li><a href="{{ site.baseurl | within: site}}{{cat.url | within: site}}">{{ cat.title | within: site }}</a><li>} }
+=======
+              <li>List: {{cat.categories | within: site}}</li>
+>>>>>>> parent of 9adfbbf... BGT URLS
             {% endif %}
           {% endfor %}
+          {{ postarr }}
         </ul>
         <br>
       {% endif %}
