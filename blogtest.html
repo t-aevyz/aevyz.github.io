@@ -1,5 +1,5 @@
 ---
-title: My Series12
+title: My Series123
 ---
 <div class="container">
   <div id="article">
@@ -37,7 +37,8 @@ forend
         {% assign arr = {{arr | push: cpage.categories}} %}
         <h1>{{cpage.categories}}</h1>
         <ul>
-          {% for cat in site.pages %}
+          {% for cat in site.posts %}
+
           <li>If Check2: '{{cat.categories}}' '{{tempcpage.categories}}'</li>
             {% if cat.categories == tempcpage.categories %}
               <li>List: {{cat | within: site}}</li>
