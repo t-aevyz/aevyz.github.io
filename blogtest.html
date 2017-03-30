@@ -30,7 +30,8 @@ title: My Series1234567890
               {% if cat.categories == tempcpage.categories %}
                 {% assign posttitles = {{ posttitles | unshift: cat.title }} %}
                 {% assign posturls  = {{ posturls | push: cat.url }} %}
-                {% assign str = {{ str | prepend: '<li><a href="{{ site.baseurl | within: site}}{{ cat.url }}"> {{ cat.title }} </a></li>'}} %}
+                {% assign temp = <li><a href="{{ site.baseurl | within: site}}{{ cat.url }}"> {{ cat.title }} </a></li> %}
+                {% assign str = {{ str | prepend: temp }} %}
               {% endif %}
 
             {% endfor %}
