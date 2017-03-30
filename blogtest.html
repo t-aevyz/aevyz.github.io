@@ -24,7 +24,6 @@ title: My Series1
             {% assign postarr = "" %}
 
             {% for cat in site.posts %}
-            <li>IF STATE: "{{ cat.categories }}" "{{tempcpage.categories}}"</li>
               {% if cat.categories == tempcpage.categories %}
                 {{ cat.title }}
                 {% assign postarr = {{ postarr | push: cat }} %}
@@ -32,6 +31,7 @@ title: My Series1
             {% endfor %}
 
             {% for p in postarr %}
+              <li>p: {{ p.title }}</li>
               <li><a href="{{ site.baseurl | within: site}}{{p.url | within: site}}">{{ p.title | within: site }} </a></li>
             {% endfor %}
           </ul>
