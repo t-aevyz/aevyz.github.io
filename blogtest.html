@@ -24,7 +24,9 @@ title: My Series
             {% assign postarr = "" %}
 
             {% for cat in site.posts %}
+            <li>IF STATE: "{{ cat.categories }}" "{{tempcpage.categories}}"</li>
               {% if cat.categories == tempcpage.categories %}
+                {{ cat.title }}
                 {% assign postarr = {{ postarr | push: cat }} %}
               {% endif %}
             {% endfor %}
