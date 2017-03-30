@@ -1,0 +1,16 @@
+---
+title: All Posts
+---
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+var arr = [];
+
+{% for post in site.posts%}
+arr[arr.length] = {{post.title}}
+document.write({{post.title}});
+{% endfor %}
+document.write('Your Title'.link('http://www.example.com'));
+
+</script>
