@@ -37,15 +37,13 @@ forend
         {% assign arr = {{arr | push: cpage.categories}} %}
         <h1>{{cpage.categories}}</h1>
         <ul>
+          {% assign postarr = "" %}
           {% for cat in site.posts %}
             {% if cat.categories == tempcpage.categories %}
-              <li>
-                <a href="{{ site.baseurl | within: site}}{{cat.url | within: site}}">
-                  {{ cat.title | within: site }}
-                </a>
-              </li>
+              {% assign postarr = {{postarr | push: <li><a href="{{ site.baseurl | within: site}}{{cat.url | within: site}}">{{ cat.title | within: site }}</a><li>} }
             {% endif %}
           {% endfor %}
+          {{ postarr }}
         </ul>
         <br>
       {% endif %}
