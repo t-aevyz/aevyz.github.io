@@ -21,18 +21,17 @@ title: My Series
           {% assign arr = {{arr | push: cpage.categories}} %}
             <h1>{{cpage.categories}}</h1>
             <ul>
-            {% assign postarr = "" %}
+            {% assign posturls = "" %}
+            {% assign posttitles = "" %}
 
             {% for cat in site.posts %}
               {% if cat.categories == tempcpage.categories %}
-                <li>{{ cat.title }}</li>
                 {% assign postitles = {{ postarr.title | push: cat }} %}
                 {% assign posturls  = {{ postarr.url | push: cat }} %}
               {% endif %}
             {% endfor %}
 
             {% for p in posturls %}
-              <li>p: {{ p.title }}</li>
               <li><a href="{{ site.baseurl | within: site}}{{ posturls[forloop.rindex0] }}"> {{ posttitles[forloop.rindex0] }} </a></li>
             {% endfor %}
           </ul>
