@@ -8,8 +8,8 @@ Hello World
 var arr = [];
 
 {% for post in site.posts %}
-arr[arr.length] = {{post.title}};
-document.write({{post.title}});
+arr[arr.length] = {{post.title}}
+document.write("{{post.title}}")
 {% endfor %}
 </script>
 <script>
