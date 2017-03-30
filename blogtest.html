@@ -1,5 +1,5 @@
 ---
-title: My Series1
+title: My Series12
 ---
 <div class="container">
   <div id="article">
@@ -22,6 +22,7 @@ forend
     {% assign arr = "blog" | split: ", " %}
 
     {% for cpage in site.posts %}
+    {{cpage.categories}}
       {% assign bool = true %}
 
       {% for categ in arr %}
