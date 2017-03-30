@@ -26,7 +26,7 @@ title: My Series
 
             {% for cat in site.posts %}
               {% assign abc = {{ site.posts[3]]}}.title %}
-              {{ abc }}abcdef
+              {{ abc }}abcde
               {% if cat.categories == tempcpage.categories %}
                 {% assign posttitles = {{ posttitles | push: cat.title }} %}
                 {% assign posturls  = {{ posturls | push: cat.url }} %}
