@@ -1,7 +1,7 @@
 ---
 title: All Posts
 ---
-
+<ul>
 <script type="text/javascript">
 var pTitles = [];
 var pURLs = [];
@@ -12,14 +12,15 @@ pURLs[pURLs.length] = "{{post.url}}"
 document.write("{{post.title}}");
 {% endfor %}
 
-//pTitles.reverse();
+pTitles.reverse();
 
 
 for(i = 0; i < pTitles.length; i++){
   var str = String(pTitles[i]);
   var url = String(pURLs[i]);
-  var final = str.link(url);
+  var final = str.link('<li>'+url+</li>);
   document.write(final);
 }
 
 </script>
+</ul>
