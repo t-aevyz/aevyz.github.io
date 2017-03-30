@@ -38,10 +38,12 @@ forend
         <h1>{{cpage.categories}}</h1>
         <ul>
           {% for cat in site.posts %}
-
-          <li>If Check: '{{cat.categories}}' '{{tempcpage.categories}}'</li>
             {% if cat.categories == tempcpage.categories %}
-              <li>List: {{cat.categories | within: site}}</li>
+              <li>
+                <a href="{{ site.baseurl | within: site}}{{cat.url | within: site}}">
+                  {{ cat.title | within: site }}
+                </a>
+              </li>
             {% endif %}
           {% endfor %}
         </ul>
