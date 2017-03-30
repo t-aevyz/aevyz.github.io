@@ -1,5 +1,5 @@
 ---
-title: My Series
+title: My Series123
 ---
 <div class="container">
   <div id="article">
@@ -26,12 +26,17 @@ title: My Series
 
             {% for cat in site.posts %}
               {% assign abc = {{ site.posts[3]]}}.title %}
-              {{ abc }}abcde
+
               {% if cat.categories == tempcpage.categories %}
-                {% assign posttitles = {{ posttitles | push: cat.title }} %}
-                {% assign posturls  = {{ posturls | push: cat.url }} %}
+                {% assign posttitles = {{ cat.title | push: posttitles }} %}
+                {% assign posturls  = {{ cat.url | push: posturls }} %}
                 <li><a href="{{ site.baseurl | within: site}}{{ cat.url }}"> {{ cat.title }} </a></li>
               {% endif %}
+              {% for purl in posturls %}
+                {{posturls}}
+                {{posturls[3]}}
+
+              {% endfor %}
             {% endfor %}
           </ul>
           <br>
