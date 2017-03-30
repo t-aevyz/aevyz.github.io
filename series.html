@@ -11,6 +11,25 @@ var arr = [];
 arr[arr.length] = {{post.title}};
 document.write({{post.title}});
 {% endfor %}
+</script>
+<script>
+{% capture posts %}
+[
+{% for post in site.posts %}
+{
+"title"    : "{{ post.title }}",
+"url"      : "{{ post.url }}",
+"date"     : "{{ post.date | date: "%B %d, %Y" }}",
+"content"  : "{{ post.content | escape }}"
+} {% if forloop.last %}{% else %},{% endif %}
+{% endfor %}
+]
+{% endcapture %}
+var posts = {{posts | strip_newlines}}
+
+document.write(posts);
+</script>
+<script>
 document.write('Your Title'.link('http://www.example.com'));
 
 </script>
