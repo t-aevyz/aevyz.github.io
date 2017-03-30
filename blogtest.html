@@ -23,8 +23,14 @@ title: My Series
         <ul>
           {% assign postarr = "" %}
           {% for cat in site.posts %}
+
+          <li>If Check: '{{cat.categories}}' '{{tempcpage.categories}}'</li>
             {% if cat.categories == tempcpage.categories %}
+<<<<<<< HEAD
               {% assign postarr = {{postarr | push: <li><a href="{{ site.baseurl | within: site}}{{cat.url | within: site}}">{{ cat.title | within: site }}</a><li>} }
+=======
+              <li>List: {{cat.categories | within: site}}</li>
+>>>>>>> parent of 9adfbbf... BGT URLS
             {% endif %}
           {% endfor %}
           {{ postarr }}
