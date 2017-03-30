@@ -31,6 +31,7 @@ title: My Series1234567890
                 {% assign posttitles = {{ posttitles | unshift: cat.title }} %}
                 {% assign posturls  = {{ posturls | push: cat.url }} %}
                 {% assign temp = <li><a href="{{ site.baseurl | within: site}}{{ cat.url }}"> {{ cat.title }} </a></li> %}
+                {{temp}}
                 {% assign str = {{ str | prepend: temp }} %}
               {% endif %}
 
