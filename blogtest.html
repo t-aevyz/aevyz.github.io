@@ -22,18 +22,16 @@ title: My Series
         <h1>{{cpage.categories}}</h1>
         <ul>
           {% assign postarr = "" %}
-          {% for cat in site.posts %}
 
-          <li>If Check: '{{cat.categories}}' '{{tempcpage.categories}}'</li>
+          {% for cat in site.posts %}
             {% if cat.categories == tempcpage.categories %}
-<<<<<<< HEAD
-              {% assign postarr = {{postarr | push: <li><a href="{{ site.baseurl | within: site}}{{cat.url | within: site}}">{{ cat.title | within: site }}</a><li>} }
-=======
-              <li>List: {{cat.categories | within: site}}</li>
->>>>>>> parent of 9adfbbf... BGT URLS
+              {% assign postarr = {{ postarr | push: cat }} }
             {% endif %}
           {% endfor %}
-          {{ postarr }}
+
+          {% for p in postarr %}
+            <li><a href="{{ site.baseurl | within: site}}{{p.url | within: site}}">{{ p.title | within: site }} </a></li>
+          {% endfor %}
         </ul>
         <br>
       {% endif %}
