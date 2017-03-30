@@ -23,22 +23,18 @@ title: My Series1234567
             <ul>
             {% assign posturls = "" %}
             {% assign posttitles = "" %}
-
+            {% assign str = "" %}
             {% for cat in site.posts %}
               {% assign abc = {{ site.posts[3]]}}.title %}
 
               {% if cat.categories == tempcpage.categories %}
                 {% assign posttitles = {{ posttitles | unshift: cat.title }} %}
                 {% assign posturls  = {{ posturls | push: cat.url }} %}
-                <li><a href="{{ site.baseurl | within: site}}{{ cat.url }}"> {{ cat.title }} </a></li>
+                {% assign str = {{ str | prepend: '<li><a href="{{ site.baseurl | within: site}}{{ cat.url }}"> {{ cat.title }} </a></li>'}} %}
               {% endif %}
-              {% for purl in posturls %}
-              abcx
-                {{posturls}}
-                {{posturls[3]}}
-
-              {% endfor %}
+            
             {% endfor %}
+            {{str}}
           </ul>
           <br>
       {% endif %}
