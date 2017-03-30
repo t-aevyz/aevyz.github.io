@@ -1,5 +1,5 @@
 ---
-title: My Series1
+title: My Series12
 ---
 <div class="container">
   <div id="article">
@@ -25,14 +25,14 @@ title: My Series1
 
             {% for cat in site.posts %}
               {% if cat.categories == tempcpage.categories %}
-                {{ cat.title }}
+                <li>{{ cat.title }}</li>
                 {% assign postarr = {{ postarr | push: cat }} %}
               {% endif %}
             {% endfor %}
 
             {% for p in postarr %}
               <li>p: {{ p.title }}</li>
-              <li><a href="{{ site.baseurl | within: site}}{{p.url | within: site}}">{{ p.title | within: site }} </a></li>
+              <li><a href="{{ site.baseurl | within: site}}{{p.url | within: site}}"> {{ p.title | within: site }} </a></li>
             {% endfor %}
           </ul>
           <br>
