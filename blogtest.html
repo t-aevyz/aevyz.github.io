@@ -30,14 +30,15 @@ forend
         {% endif %}
       {% endfor %}
 
+      {% assign tempcpage = cpage %}
 
       {% if bool == true %}
         {% assign arr = {{arr | push: cpage.categories}} %}
         <h1>{{cpage.categories}}</h1>
         <ul>
           {% for cat in site.pages %}
-          <li>If Check: '{{cat.categories | within site}}' '{{cpage.categories | within site}}'</li>
-            {% if cat.categories == cpage.categories | within site %}
+          <li>If Check: '{{cat.categories}}' '{{tempcpage.categories}}'</li>
+            {% if cat.categories == tempcpage.categories %}
               <li>List: {{cat | within: site}}</li>
             {% endif %}
           {% endfor %}
