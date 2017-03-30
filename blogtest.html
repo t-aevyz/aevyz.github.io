@@ -37,7 +37,7 @@ forend
         <h1>{{cpage.categories}}</h1>
         <ul>
           {% for cat in site.pages %}
-          <li>If Check: '{{cat.categories}}' '{{tempcpage.categories}}'</li>
+          <li>If Check2: '{{cat.categories}}' '{{tempcpage.categories}}'</li>
             {% if cat.categories == tempcpage.categories %}
               <li>List: {{cat | within: site}}</li>
             {% endif %}
