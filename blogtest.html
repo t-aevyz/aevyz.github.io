@@ -26,7 +26,7 @@ title: My Series12
             {% for cat in site.posts %}
               {% if cat.categories == tempcpage.categories %}
                 <li>{{ cat.title }}</li>
-                {% assign postarr = {{ postarr | push: cat }} %}
+                {% assign postarr = {{ cat | push: postarr }} %}
               {% endif %}
             {% endfor %}
 
