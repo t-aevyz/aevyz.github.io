@@ -16,7 +16,7 @@ document.write("{{post.title}}");
 
 pTitles.reverse();
 
-for(int i = pTitles.length()-1; i!=0; i--){
+for(int i = 0; i<pTitles.length; i--){
   document.write(pTitles[i].link('{{site.baseurl}}'+pURLs[i]));
 }
 
