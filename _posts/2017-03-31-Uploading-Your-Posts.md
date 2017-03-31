@@ -1,6 +1,6 @@
 ---
 title: Uploading Your Content
-date: 2017-03-31 19:26
+date: 2017-03-31 18:26
 categories: GitHub_Sites
 series:  A Non-Programmers Guide To GitHub Sites
 show: true
