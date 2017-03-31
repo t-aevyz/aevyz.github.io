@@ -5,6 +5,9 @@ title: All Posts
 <div id="list">
 Script Replaces This
 </div>
+<div>
+  <li>List Test in Div</li>
+</div>
 </ul>
 
 <script type="text/javascript">
@@ -14,16 +17,14 @@ var pURLs = [];
 {% for post in site.posts %}
 pTitles[pTitles.length] = "{{post.title}}";
 pURLs[pURLs.length] = "{{post.url}}"
-document.write("{{post.title}}");
 {% endfor %}
 
 pTitles.reverse();
 var final ="";
-document.write('&ltul&gt');
 for(i = 0; i < pTitles.length; i++){
   var str = String(pTitles[i]);
   var url = String(pURLs[i]);
-  final += '&ltli&gt'+str.link(url)+'&lt/li&gt';
+  final += '&ltli&gt'+str.link(url)+'&lt/li&gt'+'<br>';
 }
 document.getElementById('list').innerHTML = final;
 
