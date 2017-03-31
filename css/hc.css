@@ -61,6 +61,11 @@ p
   padding-bottom:5px
 }
 
+.seriesposts li
+{
+  padding-top: 3px;
+}
+
 .homepage-posts
 {
   list-style:none

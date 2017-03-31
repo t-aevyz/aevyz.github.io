@@ -12,17 +12,17 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
-        <li><a href="/posts.html">Blog Series</a></li>
         <li>
-          <a href="#demo2" data-toggle="collapse">Collapsible</a>
+          <a href="#postCategoriesMobile" data-toggle="collapse">Blog Series</a>
 
-          <div id="demo2" class="collapse" style="indent">
-            <ul style="padding-left: 55px">
-          <li style="text-indent: 0px;list-style: none;">Hello World this is a set of text that should overflow.</li>
-        </ul>
+          <div id="postCategoriesMobile" class="collapse" style="indent">
+            <ul id="replace0" style="padding-left: 55px">
+          </ul>
           </div>
         </li>
-            <!--- <li><a href="/links.html">Links</a></li> --->
+
+        <!--- <li><a href="/posts.html">Blog Series</a></li>
+        <li><a href="/links.html">Links</a></li> --->
       <li><a href="/projects.html">Projects</a></li>
       <li><a href="/about.html">About</a></li>
       </ul>
@@ -31,29 +31,24 @@
 </div>
 
 
-<script>
-$('.list > li a').click(function() {
-    $(this).parent().find('ul').toggle();
-});
-</script>
-
-
 <!-- Sidebar -->
 <div id="sidebar-wrapper">
   <ul class="sidebar-nav">
     <li class="sidebar-brand"><a href="/"><h1 class="brand">{{ site.name }}</h1></a><h3>{{ site.description }}</h3></li>
     <hr />
-    <li><a href="/posts.html">Blog Series</a></li>
-    <li>
-      <a href="#demo2" data-toggle="collapse">Collapsible</a>
 
-      <div id="demo2" class="collapse" style="indent">
-        <ul style="padding-left: 55px">
-      <li style="text-indent: 0px;list-style: none;">Hello World this is a set of text that should overflow.</li>
-    </ul>
+    <li>
+      <a href="#postCategories" data-toggle="collapse">Blog Series</a>
+
+      <div id="postCategories" class="collapse" style="indent">
+      <ul id="replace1" style="padding-left: 55px">
+        <li>not replaced</li>
+      </ul>
       </div>
     </li>
-    <!---<li><a href="/links.html">Links</a></li>--->
+    <!---
+    <li><a href="/posts.html">Blog Series</a></li>
+    <li><a href="/links.html">Links</a></li>--->
     <li><a href="/projects.html">Projects</a></li>
     <li><a href="/about.html">About</a></li>
     <hr />
@@ -65,3 +60,21 @@ $('.list > li a').click(function() {
     </div>
   </ul>
 </div>
+
+<script>
+var catArray = [];
+var list = "";
+{% for pg in site.posts %}
+var found=false;
+for(i = 0; i<catArray.length;i++){
+  if(catArray[i]=="{{pg.categories}}") found=true;
+}
+if(!found){
+  catArray.push("{{pg.categories}}");
+  list+='<li style="font-size: 10px; text-indent: 0px;line-height: 15px"><a href="posts.html#{{pg.categories}}">{{pg.series}}</a></li>';
+}
+
+{% endfor %}
+document.getElementById('replace0').innerHTML = list;
+document.getElementById('replace1').innerHTML = list;
+</script>
