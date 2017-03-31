@@ -52,6 +52,15 @@ p
   padding-bottom:30px
 }
 
+.seriesposts
+{
+  font-size:18px;
+  list-style:none;
+  font-weight:lighter;
+  line-height:150%;
+  padding-bottom:5px
+}
+
 .homepage-posts
 {
   list-style:none
@@ -752,6 +761,4 @@ time
   width: 100%;
   height: 50%;
   font-size: small;
-}
-
 }

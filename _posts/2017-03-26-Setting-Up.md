@@ -2,7 +2,7 @@
 title: Setting Up
 date: 2017-03-26 01:26
 categories: GitHub_Sites
-series:  GitHub Sites For Beginner
+series:  A Non-Programmers Guide To GitHub Sites
 show: true
 ---
 

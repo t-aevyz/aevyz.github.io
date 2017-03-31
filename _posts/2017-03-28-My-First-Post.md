@@ -2,7 +2,7 @@
 title: My First Post
 date: 2017-03-28 01:26
 categories: GitHub_Sites
-series:  GitHub Sites For Beginner
+series:  A Non-Programmers Guide To GitHub Sites
 show: true
 ---
 

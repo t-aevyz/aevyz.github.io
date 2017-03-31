@@ -1,9 +1,9 @@
 ---
 title: Hello World
-date: 2017-03-29 22:26
+date: 2017-03-25 22:26
 categories: blog
-series:  Blog
-show: true
+series:  My Blog
+show: false
 publish: false
 ---
 
