@@ -24,7 +24,7 @@ var final ="";
 for(i = 0; i < pTitles.length; i++){
   var str = String(pTitles[i]);
   var url = String(pURLs[i]);
-  final += '&ltli&gt'+str.link(url)+'&lt/li&gt'+'<br>';
+  final += '<li>'+str.link(url)+'</li>'+'<br>';
 }
 document.getElementById('list').innerHTML = final;
 
