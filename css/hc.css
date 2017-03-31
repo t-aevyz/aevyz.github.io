@@ -285,7 +285,7 @@ pre
   font-weight:bolder;
   color:#fff;
   text-align:center;
-  padding-top:20%
+  padding-top:6%
 }
 
 .wide
@@ -367,7 +367,7 @@ pre
   border-radius:.5em;
   background-color:transparent;
   border:2px solid rgba(255,255,255,.4);
-  color:rgba(255,255,255,.8);
+  color:rgba(255,255,255,.6);
   font-weight:200;
   font-family:"Helvetica Neue", helvetica, "Open Sans", sans-serif;
   font-weight: bolder;
@@ -400,6 +400,10 @@ img
   max-width:100%;
   -webkit-filter: drop-shadow(3px 3px 3px #222);
   filter: drop-shadow(3px 3px 3px #222);
+  max-width: 600px;
+  max-height: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #article

@@ -1,6 +1,6 @@
 ---
 title: Uploading Your Content
-date: 2017-03-28 14:26
+date: 2017-03-31 19:26
 categories: GitHub_Sites
 series:  A Non-Programmers Guide To GitHub Sites
 show: true
@@ -32,9 +32,8 @@ Finally you can upload your posts to the Github servers by simply hitting the `P
 
 ![Push]({{site.baseurl}}/images/tutorial/pushbutton.png "Push Button")
 
-### Viewing Your Changes
 
-#### Check if Project Has Any Build Errors
+### Check if Project Has Any Build Errors
 In the event that you have made a big mistake in your code and the site cannot be built, don't panic, the old functional version of your site will still be shown.
 
 You can check if your new content has any major flaws by going to your online repository, found at `www.github.com/<Your User Name Here>/herring-cove`.
@@ -50,6 +49,6 @@ In the event there is a green check on your commit, then that means that everyth
 In some cases, GitHub might not interpret there being any changes to the site, despite there actually being so. Examples of this, are for instance when you make changes to the CSS (if you aren't sure what this is, it will be explained later). To alleviate this, you must force GitHub to rebuild your site. The easiest way to do this, is to make a slight change to a post of your choice, such as adding another enter at the end of the page, which won't make any difference. Whilst this is not the ideal solution, it forces GitHub to rebuild your site. Alternatively, you could use this as an opportunity to spell check your site, which might be useful as well.  
 
 #### Viewing in you Browser
-Despite there being no build errors, there may be formatting errors in your site, so it is advisable to view the pages you created just as any end-user would.
+Despite there being no build errors and you having previewed your site before uploading, there may be formatting errors that may have slid past you or problems with GitHub interpreting your site differently. It is better to be safe then sorry, so just view the pages you created just as any end-user would.
 
 >Your default URL for your website is `https://<Your User Name>.github.io/herring-cove`.

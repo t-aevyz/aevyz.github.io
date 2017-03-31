@@ -3,12 +3,9 @@ title: Hello World
 date: 2017-03-25 22:26
 categories: blog
 series:  My Blog
-show: false
-publish: false
 ---
 
-This is my first post under the category blog to test the new series feature found in the BlogTest.html (name is probably going to change so no links).
 
-So the rest of this post is just gonna feature some Lorem Ipsum filler material.
+This blog is going to be focused on an introduction into Web Development with Jekyll. I am going to delve into my experiences with Jekyll, GitHub Sites, Ruby, Markdown, HTML, CSS and perhaps even a bit of Javascript from the perspective from someone with absolutely no web development history. Lots of trial and error occurred while trying to get to this point, so I might as well post some experiences, that can help someone else trying to learn how to do this.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+This is my first post under the category blog to test the new features in the `posts.html` page. Reason being that I need an actual post in a different category, so yeah.

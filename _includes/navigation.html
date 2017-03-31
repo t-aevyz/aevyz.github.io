@@ -71,7 +71,7 @@ for(i = 0; i<catArray.length;i++){
 }
 if(!found){
   catArray.push("{{pg.categories}}");
-  list+='<li style="font-size: 10px; text-indent: 0px;line-height: 15px"><a href="posts.html#{{pg.categories}}">{{pg.series}}</a></li>';
+  list+='<li style="font-size: 13px; text-indent: 0px;line-height: 15px; padding-bottom: 1px; padding-top: 2px;"><a href="{{site.baseurl}}/posts.html#{{pg.categories}}">{{pg.series}}</a></li>';
 }
 
 {% endfor %}
