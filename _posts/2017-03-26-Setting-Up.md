@@ -3,7 +3,6 @@ title: Setting Up
 date: 2017-03-26 01:26
 categories: GitHub_Sites
 series:  A Non-Programmers Guide To GitHub Sites
-show: true
 ---
 
 For this project, I shall be explaining how I used a template and modified this to make this blog. Whilst not all templates are made in the same way, they do bear a lot of similarities and I am fairly confident that one can easily apply the lessons learned here to other projects.

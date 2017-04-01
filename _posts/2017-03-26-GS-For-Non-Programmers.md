@@ -4,7 +4,6 @@ title: An Introduction to GitHub Sites
 date: 2017-03-26 00:26
 categories: GitHub_Sites
 series:  A Non-Programmers Guide To GitHub Sites
-show: true
 ---
 
 In this series, I hope to make life easier for all people trying to make a GitHub Site, with little to no knowledge of programming. I hope to explain how to use a template and customize it to your advantage, as well as the basics of uploading your content to GitHub. Furthermore I also plan to explain how to take advantage of the Liquid Template Language.  

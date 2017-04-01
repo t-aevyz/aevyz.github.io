@@ -3,7 +3,6 @@ title: My First Post
 date: 2017-03-28 01:26
 categories: GitHub_Sites
 series:  A Non-Programmers Guide To GitHub Sites
-show: true
 ---
 
 Now that you have generated a site, you probably wish to actually post something on it. You should first write out your first post in Atom. Most posts that you shall write shall be posted in the `_posts` folder. Jekyll accepts posts in HTML or Markdown.

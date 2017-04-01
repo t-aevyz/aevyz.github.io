@@ -3,7 +3,6 @@ title: Previewing Your Changes
 date: 2017-03-31 08:26
 categories: GitHub_Sites
 series:  A Non-Programmers Guide To GitHub Sites
-show: true
 ---
 
 It would be ideal to preview your changes before pushing them to the site, to see if the formatting matches your expectations. Especially if you are experimenting with Liquid or Javascript, you may find that sometimes the text does not match what you expected. Obviously uploading tests directly to GitHub is the simplest solution, as it directly builds content for you when you upload your content, but this is not the best idea for a multitude of reasons.

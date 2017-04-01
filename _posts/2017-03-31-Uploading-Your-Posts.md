@@ -3,7 +3,6 @@ title: Uploading Your Content
 date: 2017-03-31 18:26
 categories: GitHub_Sites
 series:  A Non-Programmers Guide To GitHub Sites
-show: true
 ---
 Now that you have created content for your website, you want to publish it live on your website. This is done by creating a Commit, that you can Push on to your site.
 
