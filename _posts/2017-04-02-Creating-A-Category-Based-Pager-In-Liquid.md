@@ -1,6 +1,6 @@
 ---
-title: Category Based Pagination in Liquid for Jekyll without Gems
-date: 2017-04-01 01:26
+title: Creating a Category Based Pagination in Liquid for Jekyll without Gems
+date: 2017-04-02 17:26
 categories: adv-jekyll
 series:  Advanced Customization of Jekyll
 
@@ -130,7 +130,7 @@ Note: I suspect I may have gotten an enter wrong in the CSS, you can find the or
 The current Paginator used is the one described here. Here are the links to the [Paginator](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/_includes/seriespager.html) and [CSS](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/css/bootstrap.min.css).
 
 The Paginator is added via the standard Liquid
-`&#123;% include seriespager.html %&#125;` tag. See my [`post.html`](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/_layouts/post.html) file for an example to implementation.
+<code>&#123;% include seriespager.html %&#125;</code> tag. See my [`post.html`](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/_layouts/post.html) file for an example to implementation.
 
 
 ### Evaluation
