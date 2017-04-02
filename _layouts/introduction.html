@@ -44,7 +44,9 @@ layout: default
   </div>
 </div>
 {% include share.html %}
+<!---{% if page.categories == "general"%}
+  {% include pager.html %}
+{% else %}--->
   {% include seriespager.html %}
-<!---
+<!---{% endif %}--->
 {% include comment.html %}
---->
