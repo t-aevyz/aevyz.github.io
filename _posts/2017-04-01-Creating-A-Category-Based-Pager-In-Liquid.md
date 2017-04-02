@@ -1,5 +1,5 @@
 ---
-title: Category Based Pagination in Liquid for Jekyll
+title: Category Based Pagination in Liquid for Jekyll without Gems
 date: 2017-04-01 01:26
 categories: adv-jekyll
 series:  Advanced Customization of Jekyll
