@@ -141,7 +141,7 @@ When commiting it is advisable to have a ***sensible*** comment. This helps peop
 
 Having an author is required for [GitHub contributions](https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/#you-havent-added-your-local-git-commit-email-to-your-profile), if you wish to count those.
 
-Finally when you are ready to commit, simply click `Commit > Commit and Push`.
+Finally when you are ready to commit, simply click `Commit > Commit and Push`. In the following windows, simply hit push.
 
 At this point there may be some warnings that may pop up. Not all of these may apply to you, especially since you have YAML headers on some pages, which may confuse the IDE. You can have the IDE ignore these by going to the relevant errors and using the `SHIFT+ENTER` menu ignoring them. These are unfortunately things that need to be decided on a case by case basis, if you need some help, feel free to leave a comment, I will get back to you.
 
