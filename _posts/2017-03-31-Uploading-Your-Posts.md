@@ -7,7 +7,7 @@ series:  A Non-Programmers Guide To GitHub Sites
 Now that you have created content for your website, you want to publish it live on your website. This is done by creating a Commit, that you can Push on to your site.
 
 ### Creating a Commit
-Now assuming you have any changes you wish to publish, such as any new posts or some new site feature, you can make use of Gitkraken to help you upload these to Github. You can bundle these changes (or simply a single change) into a so called commit, that you can then upload to the Github servers.
+Now assuming you have any changes you wish to publish, such as any new posts or some new site feature, you can make use of GitKraken to help you upload these to GitHub. You can bundle these changes (or simply a single change) into a so called commit, that you can then upload to the GitHub servers.
 
 The first step, is to select the item which has a text bar containing the words `//WIP`.
 
@@ -27,7 +27,7 @@ From the files that you have staged, you can create a commit. It is a sensible i
 
 ![Gitkraken Commit]({{site.baseurl}}/images/tutorial/commit.png "Committing")
 
-Finally you can upload your posts to the Github servers by simply hitting the `Push` button in the top bar.
+Finally you can upload your posts to the GitHub servers by simply hitting the `Push` button in the top bar.
 
 ![Push]({{site.baseurl}}/images/tutorial/pushbutton.png "Push Button")
 

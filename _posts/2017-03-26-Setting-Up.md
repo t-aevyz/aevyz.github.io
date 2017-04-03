@@ -39,9 +39,9 @@ And change the Source setting from the GitHub Pages section to Master.
 ### Setting up GitKraken
 While using a Git Client is not strictly necessary, it does provide a certain level of convenience. Of course you can use the GitHub web interface or the command line Git service, but that is not necessarily required when there is a simple client that can do this for you.
 
-I use Gitkraken, as it is a cross-platform client, that has a simple and intuitive interface. You can download Gitkraken [here](www.gitkraken.com).
+I use GitKraken, as it is a cross-platform client, that has a simple and intuitive interface. You can download GitKraken [here](www.gitkraken.com).
 
-Upon installation, Gitkraken will prompt you to link your account to GitHub.
+Upon installation, GitKraken will prompt you to link your account to GitHub.
 
 Once you have linked your account, you can clone your fork of the Herring-Cove to your computer. By cloning, you are essentially creating a local copy of the project.
 

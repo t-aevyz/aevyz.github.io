@@ -223,10 +223,11 @@ blockquote
 {
   border-left:2px solid #d90006;
   border-right:2px solid #d90006;
-  margin-left:-40px;
-  margin-right:-40px;
-  padding-left:40px;
-  background:#f3f3f7
+  margin-left:0px;
+  margin-right:0px;
+  /*padding-left:40px;*/
+  background:#f3f3f7;
+  text-align: justify;
 }
 
 ul,ol
@@ -401,7 +402,7 @@ img
   -webkit-filter: drop-shadow(3px 3px 3px #222);
   filter: drop-shadow(3px 3px 3px #222);
   max-width: 600px;
-  max-height: 300px;
+  max-height: 550px;
   padding-top: 10px;
   padding-bottom: 10px;
   max-width:100%;

@@ -25,6 +25,6 @@ By using GitHub sites, we are uploading our content on GitHub, meaning that anyo
 * A Git Client (I Personally Recommend [GitKraken](https://www.gitkraken.com/))
 
 
->_While it is not necessarily required to use a Git Client, it does make life a lot easier, then manually uploading everything to Github or using a CLI interface._
+>_While it is not necessarily required to use a Git Client, it does make life a lot easier, then manually uploading everything to GitHub or using a CLI interface._
 
 How to configure each of these programs, you shall see in the following setup guide.

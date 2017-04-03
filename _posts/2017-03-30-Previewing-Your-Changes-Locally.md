@@ -53,7 +53,7 @@ Some operating systems/file browsers allow you to open a Terminal Prompt at a gi
 
 ![Right Click to Open in Terminal](/images/tutorial/open-in-terminal.png "An Example in the Antergos File Browser")
 
-When you have opened the directory in your Terminal Propmt, simply type in `bundle exec jekyll serve` and wait for your site to be built. Your folder should look like this:
+When you have opened the directory in your Terminal Prompt, simply type in `bundle exec jekyll serve` and wait for your site to be built. Your folder should look like this:
 
 ![Terminal when Ruby is launched](/images/tutorial/jekyll-serve.png "After Executing Command")
 

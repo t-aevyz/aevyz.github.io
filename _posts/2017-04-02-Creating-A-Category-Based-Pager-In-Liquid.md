@@ -10,14 +10,12 @@ In this post, I shall describe the Paginator I wrote purely in Liquid. This was 
 ### TL;DR
 For those that are impatient, here is the code that I used.
 
->* Limitation: One category per post.
->* Solution: Use tags if you need more then one.
->* Note that you may need to use HTML Codes to use the left and right arrows
+>Limitation: One category per post.
 
 
 <div id="spoiler" style="display:none">
 <code>
-&#123;ul class="pager"&#125;
+&lt;ul class="pager"&gt;
 &#123;% assign prev = "" %&#125;<br>
 &#123;% assign next = "" %&#125;<br>
 &#123;% assign stop = false %&#125;<br>
@@ -44,7 +42,7 @@ For those that are impatient, here is the code that I used.
 &#123;% if next != "" %&#125;<br>
     &lt;li class="next"&gt;&lt;a href="&#123;&#123; next &#125;&#125;"&gt; Next Page  -  &#123;&#123;nTitle&#125;&#125; &rarr;&lt;/a&gt;&lt;/li&gt;<br>
 &#123;% endif %&#125;<br>
-&#123;/ul&#125;
+&lt;/ul&gt;
 </code>
 </div>
 <button title="Click to show/hide code" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/Hide Code</button>
@@ -125,7 +123,7 @@ Credit: [Herring Cove](https://github.com/arnp/herring-cove), by [@Arnp](https:/
 
 Note: I suspect I may have gotten an enter wrong in the CSS, you can find the original [here](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/css/bootstrap.min.css)
 
-**EDIT**: In the event that you have long file names, you may wish to add `"max-width: 50%"` (or any number under `50%`, I currently have `47%`) to your CSS or to the `<a>` tags , as then the butons do not flow to the other side.
+**EDIT**: In the event that you have long file names, you may wish to add `"max-width: 50%"` (or any number under `50%`, I currently have `47%`) to your CSS or to the `<a>` tags , as then the buttons do not flow to the other side.
 
 ### Working Copy
 
