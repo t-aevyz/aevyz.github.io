@@ -1,3 +1,4 @@
+<!--suppress HtmlUnknownTarget -->
 <ul class="pager">
 
 
@@ -22,10 +23,10 @@
   {% endfor%}
 
   {% if prev != "" %}
-    <li class="previous"><a href="{{ prev }}">&larr; Previous Page  -  {{pTitle}}</a></li>
+    <li class="previous"><a href="{{ prev }}" style="max-width: 47%">&larr; Previous Page  -  {{pTitle}}</a></li>
   {% endif %}
   {% if next != "" %}
-      <li class="next"><a href="{{ next }}"> Next Page  -  {{nTitle}} &rarr;</a></li>
+      <li class="next"><a href="{{ next }}" style="max-width: 47%"> Next Page  -  {{nTitle}} &rarr;</a></li>
   {% endif %}
 
 </ul>

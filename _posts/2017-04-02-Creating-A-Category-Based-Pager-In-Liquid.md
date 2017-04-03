@@ -125,6 +125,8 @@ Credit: [Herring Cove](https://github.com/arnp/herring-cove), by [@Arnp](https:/
 
 Note: I suspect I may have gotten an enter wrong in the CSS, you can find the original [here](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/css/bootstrap.min.css)
 
+**EDIT**: In the event that you have long file names, you may wish to add `"max-width: 50%"` (or any number under `50%`, I currently have `47%`) to your CSS or to the `<a>` tags , as then the butons do not flow to the other side.
+
 ### Working Copy
 
 The current Paginator used is the one described here. Here are the links to the [Paginator](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/_includes/seriespager.html) and [CSS](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/css/bootstrap.min.css).
