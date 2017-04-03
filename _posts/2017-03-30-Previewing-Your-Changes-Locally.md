@@ -6,7 +6,7 @@ series:  A Non-Programmers Guide To GitHub Sites
 ---
 It would be ideal to preview your changes before pushing them to the site, to see if the formatting matches your expectations. Especially if you are experimenting with Liquid or Javascript, you may find that sometimes the text does not match what you expected. Obviously uploading tests directly to GitHub is the simplest solution, as it directly builds content for you when you upload your content, but this is not the best idea for a multitude of reasons.
 
-### Why Not To Test Directly On GitHub?
+## Why Not To Test Directly On GitHub?
 #### 1) Poor End User Experience
 By uploading testing content, you are allowing your end users to see content that is not yet finished, which may negatively impact viewing experience. Let's say that you are rewriting the navigational bar. Whilst you are rewriting the bar, you may accidentally break it, and prevent the module from displaying the correct content. Sure you can revert this using [git](https://support.gitkraken.com/working-with-files/commits), but you will wind up negatively impacting a user who is attempting to load your site.
 
@@ -27,7 +27,7 @@ Uploading your content means that you are going have to spend time first uploadi
 I am fairly sure that there are far more reasons, but these should be enough to demonstrate why this is a bad idea. Whilst I shall admit, that I started off pushing all my tests to GitHub, I soon realized how terrible the idea is. Don't repeat my mistakes, please...
 
 <br><br>
-### <a name="test-local"></a>The Better Solution: Testing Locally
+## <a name="test-local"></a>The Better Solution: Testing Locally
 
 #### Installing Jekyll
 In order to test your site, you will be required to install Jekyll, so that you can build your site locally.

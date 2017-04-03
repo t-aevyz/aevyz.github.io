@@ -9,7 +9,7 @@ For this project, I shall be explaining how I used a template and modified this 
 
 I have chosen the template [Herring Cove](https://github.com/arnp/herring-cove), by [@Arnp](https://github.com/arnp). It is a rather good looking and simple template that is easy to modify.
 
-### Forking the Project
+## Forking the Project
 
 >#### What is Forking?
 >A fork is a personal copy of another user's repository (basically their project) that lives on your account. Forks allow you to freely make changes to a project without affecting the original.
@@ -36,7 +36,7 @@ And change the Source setting from the GitHub Pages section to Master.
   ![Github Settings]({{site.baseurl}}/images/tutorial/githubsettings.png "Change to Master")
 
 
-### Setting up GitKraken
+## Setting up GitKraken
 While using a Git Client is not strictly necessary, it does provide a certain level of convenience. Of course you can use the GitHub web interface or the command line Git service, but that is not necessarily required when there is a simple client that can do this for you.
 
 I use GitKraken, as it is a cross-platform client, that has a simple and intuitive interface. You can download GitKraken [here](www.gitkraken.com).
@@ -61,12 +61,12 @@ Once the project is successfully cloned, you can now open the project using the 
 
 
 
-### Setting up Atom
+## Setting up Atom
 The reason why I prefer using Atom is that it supports projects. This makes is superior to Notepad++ in my opinion, as you can for instance perform Find and Replace operations on multiple files. A further benefit is that it contains a Markdown Preview, which shall be useful when writing your blog posts.
 
 To configure Atom for your project, you simply need to add it as a project folder. This can be done either via `File-->Add Project Folder` or the shortcut `CTRL+SHIFT+A`.
 
-### And that's it!
+## And that's it!
 You finished configuring the project.
 
 You can now view your site at `https://<Your User Name>.github.io/herring-cove`

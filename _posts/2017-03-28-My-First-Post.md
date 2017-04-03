@@ -7,13 +7,13 @@ series:  A Non-Programmers Guide To GitHub Sites
 
 Now that you have generated a site, you probably wish to actually post something on it. You should first write out your first post in Atom. Most posts that you shall write shall be posted in the `_posts` folder. Jekyll accepts posts in HTML or Markdown.
 
-### What is Markdown
+## What is Markdown
 Markdown is a `Lightweight Markup Language`, in other words, it is used to format text. In the case of Jekyll, Markdown files are automatically converted into HTML webpages for you. For instance, [this post](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/_posts/2017-03-28-My-First-Post.md) is formatted using Markdown.
 
 >#### For those with HTML Experience
 For those with HTML experience, you are free to also include HTML snippets in your Markdown files. These will also be displayed on the site later, however it cannot be guaranteed to be bug free. You can also use the `include` method from Liquid, which shall be elaborated on in a further post.
 
-### Creating the Post
+## Creating the Post
 Creating a post is very simple, in Atom simply Right Click the `_posts` folder and click on the `New File` option.
 
 You must name your post in the following scheme:

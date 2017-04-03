@@ -6,7 +6,7 @@ series:  A Non-Programmers Guide To GitHub Sites
 ---
 Now that you have created content for your website, you want to publish it live on your website. This is done by creating a Commit, that you can Push on to your site.
 
-### Creating a Commit
+## Creating a Commit
 Now assuming you have any changes you wish to publish, such as any new posts or some new site feature, you can make use of GitKraken to help you upload these to GitHub. You can bundle these changes (or simply a single change) into a so called commit, that you can then upload to the GitHub servers.
 
 The first step, is to select the item which has a text bar containing the words `//WIP`.
@@ -32,7 +32,7 @@ Finally you can upload your posts to the GitHub servers by simply hitting the `P
 ![Push]({{site.baseurl}}/images/tutorial/pushbutton.png "Push Button")
 
 
-### Check if Project Has Any Build Errors
+## Check if Project Has Any Build Errors
 In the event that you have made a big mistake in your code and the site cannot be built, don't panic, the old functional version of your site will still be shown.
 
 You can check if your new content has any major flaws by going to your online repository, found at `www.github.com/<Your User Name Here>/herring-cove`.

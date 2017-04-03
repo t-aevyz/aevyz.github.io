@@ -7,7 +7,7 @@ series:  Advanced Customization of Jekyll
 ---
 In this post, I shall describe the Paginator I wrote purely in Liquid. This was my first main feature, thus was a little rough on the edges. It was also the feature that convinced me to ditch purely Liquid based solutions since documentation and debugging of it is atrocious.
 
-### TL;DR
+## TL;DR
 For those that are impatient, here is the code that I used.
 
 >Limitation: One category per post.
@@ -48,10 +48,10 @@ For those that are impatient, here is the code that I used.
 <button title="Click to show/hide code" type="button" onclick="if(document.getElementById('spoiler') .style.display=='none') {document.getElementById('spoiler') .style.display=''}else{document.getElementById('spoiler') .style.display='none'}">Show/Hide Code</button>
 
 
-### Concept
+## Concept
 The concept behind this code is rather simple. Have a previous button and a next button, that only takes posts from the same category.
 
-### Implementation
+## Implementation
 #### Declare Variables
 
 <code>&#123;% assign prev = "" %&#125;<br>
@@ -125,7 +125,7 @@ Note: I suspect I may have gotten an enter wrong in the CSS, you can find the or
 
 **EDIT**: In the event that you have long file names, you may wish to add `"max-width: 50%"` (or any number under `50%`, I currently have `47%`) to your CSS or to the `<a>` tags , as then the buttons do not flow to the other side.
 
-### Working Copy
+## Working Copy
 
 The current Paginator used is the one described here. Here are the links to the [Paginator](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/_includes/seriespager.html) and [CSS](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/css/bootstrap.min.css).
 
@@ -133,7 +133,7 @@ The Paginator is added via the standard Liquid
 <code>&#123;% include seriespager.html %&#125;</code> tag. See my [`post.html`](https://raw.githubusercontent.com/Aevyz/aevyz.github.io/master/_layouts/post.html) file for an example to implementation.
 
 
-### Evaluation
+## Evaluation
 Whilst this project worked, it just proved to me that the Liquid Template Language has many small quirks that annoy me greatly. For instance, the inability to reverse an array. The inability to debug effectively without resorting to adding a comment in each line was annoying. Furthermore the fact that sometimes the page would not update itself when Liquid failed caused confusion as well (no error messages, build errors). That being said, I can see why Liquid is useful, as it can help write simple tasks out quickly and without Javascript. That being said, writing this out in Javascript only using liquid to obtain the page data and moving this data into a Javascript array would have been far more sensible use of time.
 
 Evaluation TL;DR: Just use Javascript for most scripting.
