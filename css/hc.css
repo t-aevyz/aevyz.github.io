@@ -484,8 +484,9 @@ time
   padding:10px 40px
 }
 
-.recent-posts h1
+.recent-posts h2
 {
+  padding-top: 0;
   padding-bottom:10px;
   font-size:1.6em
 }
