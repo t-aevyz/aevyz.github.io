@@ -1,9 +1,7 @@
 ---
-Title: License
+title: Licensing
+layout: otherpage
 ---
-
-# Licensing of this Site
-
 #### This document is licensed in two parts.
 
 ## Content
@@ -34,7 +32,7 @@ The rest of the site's code, defined as all content not within `_posts` and `_si
 </div>
 <button title="Click to expand/hide MIT license" type="button" onclick="if(document.getElementById('mitspoiler') .style.display=='none') {document.getElementById('mitspoiler') .style.display=''}else{document.getElementById('mitspoiler') .style.display='none'}">Click to expand/hide MIT license</button>
 
-## Code and Resources Used
+## <a name="credits" />Code and Resources Used
 * [Bootstrap Min](http://getbootstrap.com/) under [MIT License](https://github.com/twbs/bootstrap/blob/master/LICENSE) with alterations
 * [Font Awesome 4.7.0](http://fontawesome.io/) under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) with alterations
 * [Herring-Cove](https://github.com/arnp/herring-cove/) under [MIT License](https://github.com/arnp/herring-cove/blob/master/LICENSE)
@@ -44,3 +42,7 @@ The rest of the site's code, defined as all content not within `_posts` and `_si
 
 ## Source
 You can find this websites original source + content at its [GitHub Repository](https://github.com/Aevyz/aevyz.github.io)
+
+
+ <a name="bugs" />
+<i>If you find any bugs in the site, I would appreciate it if you could [email me](/about.html#email) or [submit an issue](https://github.com/Aevyz/aevyz.github.io/issues/new) on GitHub, so that I can fix the issue. Alternatively simply comment on the relevant page if the feature is activated.</i>
