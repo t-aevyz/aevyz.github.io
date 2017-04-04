@@ -71,25 +71,25 @@ As seen in the image, I have been implementing my own code:
 #set($rmspace[1] = "")
 #set($rmspace[2] = "")
 ## Actual Code Starts Here
+#set ($rmspace = $NAME.split("-"))
 #set ($title="")
-#set ($nofileext = $NAME.split("."))
-#set ($rmspace = $nofileext[0].split("-"))
 #foreach($word in $rmspace)
     #if($foreach.count > 3)
         #set ($title = "$title $word")
     #end
 #end
 ## YAML
+
 ---
 layout: post
 
 title: $title
 
-date: $rmspace[0]-$rmspace[1]-$rmspace[2] $HOUR:$MINUTE
+date: $rmspace[0]-$rmspace[1]-$rmspace[2] ${HOUR}:${MINUTE}
 
 categories: $category
 
-series: <!--- TODO: Add Series---> Undefined
+series: <!--- TODO: Add Series---> series undefined
 
 ---
 
