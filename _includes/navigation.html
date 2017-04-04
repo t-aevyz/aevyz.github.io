@@ -13,10 +13,12 @@
       <ul class="nav navbar-nav">
         <li><a href="/">Home</a></li>
         <li>
-          <a href="#postCategoriesMobile" data-toggle="collapse">Blog Series</a>
+          <a id="mnoscript" href="posts.html" data-toggle="collapse">Blog Series</a>
+          <script>document.getElementById("mnoscript").href="#postCategoriesMobile";</script>
 
           <div id="postCategoriesMobile" class="collapse" style="indent">
             <ul id="replace0" style="padding-left: 55px">
+
           </ul>
           </div>
         </li>
@@ -35,10 +37,22 @@
 <div id="sidebar-wrapper">
   <ul class="sidebar-nav">
     <li class="sidebar-brand"><a href="/"><h1 class="brand">{{ site.name }}</h1></a><h3>{{ site.description }}</h3></li>
-    <hr />
 
+  <noscript>
+<!--TODO WRITE YOUR OWN NOSCRIPT SITE-->
+      <br>
+      <hr />
+      <br>
+      <a target="_blank" rel="noopener noreferrer" href="http://www.enable-javascript.com/"><li><h5><b>Please Enable Javascript</b></h5></li>
+          <li>Many site features require it.</li></a>
+      <br>
+
+
+      </noscript>
+      <hr />
     <li>
-      <a href="#postCategories" data-toggle="collapse">Blog Series</a>
+      <a id="dnoscript" href="/posts.html" data-toggle="collapse">Blog Series</a>
+      <script>document.getElementById("dnoscript").href="#postCategories";</script>
 
       <div id="postCategories" class="collapse" style="indent">
       <ul id="replace1" style="padding-left: 55px">
@@ -59,6 +73,7 @@
       <li> <a href="{{ site.github }}"><i class="fa fa-github-square"></i> github</a> </li>
     </div>
   </ul>
+
 </div>
 
 <script>
@@ -71,7 +86,7 @@ for(i = 0; i<catArray.length;i++){
 }
 if(!found){
   catArray.push("{{pg.categories}}");
-  list+='<li style="font-size: 13px; text-indent: 0px;line-height: 15px; padding-bottom: 1px; padding-top: 2px;"><a href="{{site.baseurl}}/posts.html#{{pg.categories}}">{{pg.series}}</a></li>';
+  list='<li style="font-size: 13px; text-indent: 0;line-height: 15px; padding-bottom: 1px; padding-top: 2px;"><a href="{{site.baseurl}}/posts.html#{{pg.categories}}">{{pg.series}}</a></li>'+list;
 }
 
 {% endfor %}
