@@ -97,7 +97,7 @@ series: <!--- TODO: Add Series---> series undefined
 
 This template shall generate the following popup:
 
-This code automatically generates a title, assuming you name your document in the default format `YYYY-MM-DD-TITLE-GOES-HERE.md`. Date shall also be taken front the title, but the time will be automatically gained via the `$HOUR` and `$MINUTE`. It should be noted that `$YEAR`, `$MONTH` and `$DAY` exist and can be used as well (`$YEAR-$MONTH-$DAY`). Here is a list of
+This code automatically generates a title, assuming you name your document in the default format `YYYY-MM-DD-TITLE-GOES-HERE` (`.md` shall be appended automatically). Date shall also be taken front the title, but the time will be automatically gained via the `$HOUR` and `$MINUTE`. It should be noted that `$YEAR`, `$MONTH` and `$DAY` exist and can be used as well (`$YEAR-$MONTH-$DAY`). Here is a list of
 
 As `$category` is defined nowhere, you are allowed to submit input. Unfortunately, I do not believe it is possible to implement a drop down box here, which would make life easier. Alternatively you can make multiple templates for different categories, but in my opinion, that is just unnecessary clutter.
 
