@@ -19,10 +19,8 @@ The default copy of the site can be found [here](https://aevyztutorial.github.io
 
 As you can tell, Photography and Coding Buttons do not work. Furthermore the Lorem Ipsum must be replaced with your actual project descriptions.
 
-## Approach
-The most sensible way of going through this file, would be to work from the top to bottom of the HTML doc.
 
-## YAML Header
+### YAML Header
 
 ```
 ---
@@ -35,7 +33,7 @@ In this case, I have titled this page `Projects`, which shall set the page title
 
 ![Browser Tab and Top](/images/adv-tut/top-bar-projects.png)
 
-## Customizing Header Text and Images
+### Customizing Header Text and Images
 
 ```HTML
 <div class="project-container" style="background-image: url( ... )">
@@ -58,7 +56,7 @@ In order to change the image, you will need to specify your own file. To do this
 
 You can either host the image on your own repo or simply link to a place where it is hosted. By default, Herring-Cove obtains random images from `http://lorempixel.com/` of the size 900x200. The image will be automatically cropped to have a maximum height of 170px.
 
-## <a id = "custombuttons"></a>Customizing Buttons
+### <a id = "custombuttons"></a>Customizing Buttons
 For this, we shall use the afore discussed code block:
 ```HTML
 <div class="project-container" style="background-image: url( ... )">
@@ -81,7 +79,7 @@ If you want to add another button, simply copy and paste the code and alter the 
 
 Adding functionality to the buttons is discussed [further down](#funcbutton).
 
-## Adding Your Projects
+### Adding Your Projects
 
 One of the project containers is created using the following code.
 
@@ -110,7 +108,7 @@ Simply fill in the placeholders and copy this for as many blocks as are required
 
 The Javascript used to make each block expand/contract is supplied by the theme, meaning we do not have to do any Javascript programming.
 
-## <a id="funcbutton"></a>Adding Button Functionality
+### <a id="funcbutton"></a>Adding Button Functionality
 The point of your buttons is to have them jump to a specific point on the same page. This is done using anchors.
 
 Before the first project in a given category, add a `<a id="category-name"></a>` anchor, replacing the placeholder category-name with the category name [chosen prior](#custombuttons).
@@ -140,5 +138,5 @@ Example:
 >Note: You can use `<a id="category-name" />` instead of `<a id="category-name"></a>`, however this feature is not supported by some older browsers.<br>
 >Note: You can technically use `name` as opposed to `id`, but it is [technically deprecated with HTML5](https://www.w3schools.com/tags/att_a_name.asp).
 
-## Working Copy
+### Working Copy
 To see a working copy of this in action, look at the [custom copy of the site](https://aevyztutorial.github.io/herring-cove-custom/projects.html) ([Source](https://raw.githubusercontent.com/aevyztutorial/herring-cove-custom/master/projects.html)).
