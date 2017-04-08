@@ -63,23 +63,34 @@ Templates are written in [Apache Velocity](http://velocity.apache.org). While yo
 As seen in the image, I have been implementing my own code:
 
 ```
+##
+##-----------------------------------
 ## Remove dialog box from menu
+##-----------------------------------
+##
 #set($foreach = "")
 #set($word = "")
 #set($nofileext[0] = "")
 #set($rmspace[0] = "")
 #set($rmspace[1] = "")
 #set($rmspace[2] = "")
+##
+##-----------------------------------
 ## Actual Code Starts Here
+##-----------------------------------
+##
 #set ($rmspace = $NAME.split("-"))
 #set ($title="")
 #foreach($word in $rmspace)
-    #if($foreach.count > 3)
-        #set ($title = "$title $word")
-    #end
+#if($foreach.count > 3)
+#set ($title = "$title $word")
 #end
-## YAML
-
+#end
+##
+##-----------------------------------
+##YAML
+##-----------------------------------
+##
 ---
 layout: post
 
@@ -89,10 +100,10 @@ date: $rmspace[0]-$rmspace[1]-$rmspace[2] ${HOUR}:${MINUTE}
 
 categories: $category
 
-series: <!--- TODO: Add Series---> series undefined
+series: Series Undefined
 
 ---
-
+<!--  TODO: Define Series-->
 ```
 
 This template shall generate the following popup:
@@ -101,7 +112,9 @@ This code automatically generates a title, assuming you name your document in th
 
 As `$category` is defined nowhere, you are allowed to submit input. Unfortunately, I do not believe it is possible to implement a drop down box here, which would make life easier. Alternatively you can make multiple templates for different categories, but in my opinion, that is just unnecessary clutter.
 
-In my case, I have a `series` tag, which is basically the long form of the category. Admittedly this is not the most efficient way of doing things and I am working on a Liquid script to improve this, but I thought that this would serve as a good demonstration, as it will automatically generate a `TODO` which will notify you before you upload your site, that you need to improve something. Technically, you are supposed to [define a custom TODO](https://www.jetbrains.com/help/webstorm/2017.1/defining-todo-patterns-and-filters.html) for YAML/Markdown, but I am lazy so I just used the HTML comment todo that is already inbuilt in WebStorm.
+In my case, I have a `series` tag (not included within Herring-Cove and most Jekyll templates), which is basically the full name of the category. Admittedly this is not the most efficient way of doing things and I am working on a Liquid script to improve this, but I thought that this would serve as a good demonstration.
+
+This template will automatically generate a `TODO` which will notify you before you upload your site, that you need to improve something. Technically, you are supposed to [define a custom TODO](https://www.jetbrains.com/help/webstorm/2017.1/defining-todo-patterns-and-filters.html) for YAML/Markdown, but I am lazy so I just used the HTML comment todo that is already inbuilt in WebStorm.
 
 The `undefined` at the end is to make sure that something is visible, so that even if I forget to update the TODO, I will notice in the testing phase.
 
