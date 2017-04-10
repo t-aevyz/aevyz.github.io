@@ -77,21 +77,21 @@
 </div>
 
 <script>
-  console.time("nav");
-  var catArray = [];
-  var list = "";
-  {% for pg in site.posts %}
-  var found=false;
-  for(i = 0; i<catArray.length;i++){
-    if(catArray[i]=="{{pg.categories}}") found=true;
+console.time("nav");
+var comArray = [];
+var catArray = [];
+var list = "";
+{% for pg in site.posts %}
+comArray.push('{{pg.categories}}">{{pg.series}}');{% endfor %}
+for(i = 0; i<comArray.length;i++){
+  if(catArray.indexOf(comArray[i])==-1) {
+    catArray.push(comArray[i]);
+    list='<li style="font-size: 13px; text-indent: 0;line-height: 15px; padding-bottom: 1px; padding-top: 2px;"><a href="{{site.baseurl}}/posts.html#'+comArray[i]+'</a></li>'+list;
   }
-  if(!found){
-    catArray.push("{{pg.categories}}");
-    list='<li style="font-size: 13px; text-indent: 0;line-height: 15px; padding-bottom: 1px; padding-top: 2px;"><a href="{{site.baseurl}}/posts.html#{{pg.categories}}">{{pg.series}}</a></li>'+list;
-  }
+}
 
-  {% endfor %}
-  document.getElementById('replace0').innerHTML = list;
-  document.getElementById('replace1').innerHTML = list;
- console.timeEnd("nav");
+document.getElementById('replace0').innerHTML = list;
+document.getElementById('replace1').innerHTML = list;
+
+console.timeEnd("nav");
 </script>
