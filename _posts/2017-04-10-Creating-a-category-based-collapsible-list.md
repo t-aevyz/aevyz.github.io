@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title:  Creating a Category Based Drop Down List
+title:  Creating a Category Based Collapsible List
 
 date: 2017-04-10 11:54
 
@@ -10,6 +10,7 @@ categories: adv-jekyll
 series: Advanced Customization of Jekyll
 
 ---
+The idea behind this project was to have a collapsible list, containing links to specific anchors on the post page. This would make the site a bit easier to use and better show off the post series. Despite this, I still wished to keep functionality for those disabling JavaScript.
 
 >Warning: This feature shall require JavaScript. You could rewrite this in Liquid, however the Collapse feature used requires JavaScript, thus making a fully Liquid solution not possible (and needlessly complicated).
 
