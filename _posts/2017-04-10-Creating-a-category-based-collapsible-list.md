@@ -15,7 +15,7 @@ The idea behind this project was to have a collapsible list, containing links to
 >Warning: This feature shall require JavaScript. You could rewrite this in Liquid, however the Collapse feature used requires JavaScript, thus making a fully Liquid solution not possible (and needlessly complicated).
 
 ## TL;DR
-Here is the code that I used to generate the sidebar for this specific site. **Very likely** you shall need to customize the CSS, as this CSS is pretty hard coded to my needs.
+Here is the code that I used to generate the sidebar for this specific site. Also this post assumes that all posts have a `series` tag, which contains their category name in long form (alternatives below). **Very likely** you shall need to customize the CSS, as this CSS is pretty hard coded to my needs.
 
 
 <button data-toggle="collapse" data-target="#nocss">CSS Free Version</button>
@@ -118,7 +118,9 @@ Here is the code that I used to generate the sidebar for this specific site. **V
 
 ## Requirements and Limitations
 For this project we shall be using the `Collapse` scripts provided by [Bootstrap](http://getbootstrap.com/).
-Like all my other projects, I am assuming that we are using one Category per post.
+Like all my other projects, I am assuming that we are using one Category per post and that there is a series tag, which contains the post's Category in long form.
+
+>Alternatives to Series tag: As an alternative, you could have a JavaScript function that has an entry parameter of 
 
 
 ## HTML Portion
