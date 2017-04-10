@@ -1,4 +1,5 @@
-name: Jay "Aevyz" L.
+name: Aevyz's Project Hub and Blog
+caption: Jay "Aevyz" L.
 author: Aevyz
 baseurl: ""
 description: Aevyz's Project Hub and Blog
@@ -26,7 +27,7 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-  
+
 ##Make sure to edit the above fields, especially for disqus.
 permalink: /:categories/:title.html
 
