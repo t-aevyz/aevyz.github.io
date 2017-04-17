@@ -120,7 +120,7 @@ Here is the code that I used to generate the sidebar for this specific site. Als
 For this project we shall be using the `Collapse` scripts provided by [Bootstrap](http://getbootstrap.com/).
 Like all my other projects, I am assuming that we are using one Category per post and that there is a series tag, which contains the post's Category in long form.
 
->Alternatives to Series tag: As an alternative, you could have a JavaScript function that has an entry parameter of 
+>Alternatives to Series tag: As an alternative, you could have a JavaScript function that has an entry parameter of
 
 
 ## HTML Portion

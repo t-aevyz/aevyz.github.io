@@ -16,7 +16,7 @@ Hypothetically you could rewrite your site to show only content that has a `publ
 #### 3) Unclear Git Commit History
 Testing online, means you have to upload your posts to GitHub via commits. This will easily clutter your commit history, making navigating it a terrible idea. Also if you are like me and often does not name things correctly when uploading, your history is likely going to end up like this:
 
-![Bad Github Commit History](/images/tutorial/commit-history.png "A Very Bad GitHub Commit History")
+![Bad Github Commit History](/images/commit-history.png "A Very Bad GitHub Commit History")
 
 <br>
 #### 4) Time
@@ -51,12 +51,12 @@ For more information, simply read the [documentation](https://jekyllrb.com/docs/
 Simply open a Terminal Prompt and change the directory to your Website, aka your GitHub project folder. You can change directory by using the `cd <File Path>` command. An example of this would be `cd GitProjects/Website/herring-cove`.
 Some operating systems/file browsers allow you to open a Terminal Prompt at a given folder.
 
-![Right Click to Open in Terminal](/images/tutorial/open-in-terminal.png "An Example in the Antergos File Browser")
+![Right Click to Open in Terminal](/images/open-in-terminal.png "An Example in the Antergos File Browser")
 
 When you have opened the directory in your Terminal Prompt, simply type in `bundle exec jekyll serve` and wait for your site to be built. Your folder should look like this:
 
-![Terminal when Ruby is launched](/images/tutorial/jekyll-serve.png "After Executing Command")
+![Terminal when Ruby is launched](/images/jekyll-serve.png "After Executing Command")
 
 Whilst the server is running, you can access your site at `localhost:4000` or `127.0.0.1:4000`. Now if you make any changes, they shall be automatically updated. The Terminal Prompt shall also give you information on any build fails that it encounters, which can help you alleviate the issue. To stop the server, simply press `CTRL+C`.
 
-![Terminal when changes are made](/images/tutorial/jekyll-file-regeneration.png "Jekyll when files are altered")
+![Terminal when changes are made](/images/jekyll-file-regeneration.png "Jekyll when files are altered")

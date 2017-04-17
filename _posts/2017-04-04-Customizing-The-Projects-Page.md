@@ -31,7 +31,7 @@ This HTML page simply requires a title definition. As it is not a post, the page
 
 In this case, I have titled this page `Projects`, which shall set the page title, that is displayed at the top of the browser and each tab.
 
-![Browser Tab and Top](/images/adv-tut/top-bar-projects.png)
+![Browser Tab and Top](/images/top-bar-projects.png)
 
 ### Customizing Header Text and Images
 

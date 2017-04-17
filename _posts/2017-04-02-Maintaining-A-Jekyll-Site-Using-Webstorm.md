@@ -28,37 +28,37 @@ Simply Navigate to `VCS > Checkout from Version Control > GitHub`. There you sha
 
 A popup shall appear, asking which repository you wish to clone and where it should be cloned to.
 
-![Choose which repo to clone dialog](/images/adv-tut/clone-from-github.png "Select Which Repo You Wish To Clone")
+![Choose which repo to clone dialog](/images/clone-from-github.png "Select Which Repo You Wish To Clone")
 
 With that, your project should have opened in WebStorm.
 
 ## <a name="plugin"></a>Installing the Markdown Plugin
 By default, WebStorm does not support Markdown. Therefore we need to get a plugin to do so. Navigate to `File > Settings > Plugins > Browse Repositories`.
 
-![Plugins: Browse Repositories](/images/adv-tut/settings-plugins.png)
+![Plugins: Browse Repositories](/images/settings-plugins.png)
 
 In the following window search for `Markdown Navigator` and install it.
 
-![Install Navigator Plugin](/images/adv-tut/markdown-navigator-plugin.png)
+![Install Navigator Plugin](/images/markdown-navigator-plugin.png)
 
 Once you've installed the plugin, you shall be prompted to restart WebStorm. Upon restart, you shall have a preview on the right hand side when typing out Markdown texts.
 
-![Example of Markdown Plugin](/images/adv-tut/example-markdown-plugin.png)
+![Example of Markdown Plugin](/images/example-markdown-plugin.png)
 
 ## <a name="template"></a>Creating a Template
 Something that will speed up the writing of posts, is if you can automatically generate your front matter. This can be done in the form of templates.
 
 You can edit templates by going to `File > New > Edit File Templates`
 
-![Where to find Edit Template](/images/adv-tut/edit-template.png)
+![Where to find Edit Template](/images/edit-template.png)
 
 The following window shall appear. Simply hit the `+` button to add a new template.
 
-![Markdown Template Window](/images/adv-tut/markdown-template.png)
+![Markdown Template Window](/images/markdown-template.png)
 
 Templates are written in [Apache Velocity](http://velocity.apache.org). While you can simply make a template that creates blank spaces for you to manually fill out, you can automatically fill out certain portions by implementing some code. Here you can find the [user guide](http://velocity.apache.org/engine/devel/user-guide.html).
 
-![Template Example](/images/adv-tut/create-template.png)
+![Template Example](/images/create-template.png)
 
 As seen in the image, I have been implementing my own code:
 
@@ -127,26 +127,26 @@ Personally I'd recommend running the local Jekyll server via a terminal prompt (
 
 You wish to add `jekyll serve --watch` to the `External Tools` section of WebStorm, which can be found at `File > Settings > Tools > External Tools`.
 
-![External Tools](/images/adv-tut/external-tools.png)
+![External Tools](/images/external-tools.png)
 
 Once you are there, add a new tool via the `+` button.
 
-![Jekyll Setup](/images/adv-tut/jekyll-watch.png)
+![Jekyll Setup](/images/jekyll-watch.png)
 
 Under program list `Jekyll` and under parameters list `serve` plus any additional parameters, such as `--watch`. You can read more about this at the [Jekyll Docs Page](https://jekyllrb.com/docs/usage/).
 
-![Where to launch](/images/adv-tut/launch-ext-tools.png)
+![Where to launch](/images/launch-ext-tools.png)
 
 Once you have successfully added your external tool, you can launch it via `Tools > External Tools > Your Tool Name`.
 
-![Console](/images/adv-tut/console.png)
+![Console](/images/console.png)
 
 When you launch your external tool, you should have the same interface as when you use the Terminal Prompt. Important difference is that `CTRL+C` is copy and not quit, thus meaning you have to use the red stop button in WebStorm for that.
 
 ## <a name="commit"></a>Pushing Commits
 Once you have tested out your changes and are happy to push them onto the web. You can use the `Commit Changes` menu, found in `VCS > Commit Changes` or by pressing `CTRL+K`.
 
-![Commit](/images/adv-tut/commitment.png)
+![Commit](/images/commitment.png)
 
 Select the files that you wish to commit. Remember that not all files need to be committed at once.
 Select the files that you wish to commit. Remember that not all files need to be committed at once.
